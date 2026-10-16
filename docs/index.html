@@ -33,8 +33,8 @@
 <body>
 <main>
   <h1>Marvel &amp; DC catalogs for Stremio</h1>
-  <p class="lead">Self-hosted catalog addons. They list titles in watch order; Stremio fills in details, and your
-    other addons provide the streams.</p>
+  <p class="lead">Self-hosted addons. Marvel and DC list titles in watch order (Stremio fills in details and your
+    other addons provide the streams); AU Live TV plays free Australian live channels.</p>
   <div id="addons"></div>
   <p class="note" id="hint"></p>
 
@@ -53,7 +53,9 @@
       <li><b>Addons → Installed</b>: switch off <b>Marvel Universe</b> and <b>DC Universe</b>.</li>
       <li><b>Addons → Marketplace</b>: search <b>Custom</b> → <b>Configure</b> → paste a manifest URL →
         <b>Install</b>. Once for <code class="u" data-brand="dc">https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json</code>
-        and once for <code class="u" data-brand="marvel">https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json</code>.</li>
+        and once for <code class="u" data-brand="marvel">https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json</code>.
+        For live TV also add <code class="u" data-brand="tv">https://kellogs12.github.io/marvel-dc-stremio/tv/manifest.json</code>
+        with <b>Result Passthrough</b> turned on.</li>
       <li><b>Catalogs</b>: check the new ones (tagged <i>New</i>) are switched on.</li>
       <li><b>Save &amp; Install</b>: the card must say <b>Save Configuration</b> with your UUID. Click
         <b>Save</b>. If saving fails because an addon "has been removed", delete that addon (switching it off
@@ -80,7 +82,7 @@
   } else if (location.protocol === 'http:') {
     hint.textContent = 'Local test server: the "Install" button needs HTTPS, so copy the link and paste it into Stremio > Addons > + Add addon.';
   }
-  ['marvel', 'dc'].forEach(function (brand) {
+  ['marvel', 'dc', 'tv'].forEach(function (brand) {
     var url = base + '/' + brand + '/manifest.json';
     var slot = document.getElementById('addons').appendChild(document.createElement('div'));
     fetch(url).then(function (r) {

@@ -12,8 +12,9 @@ Inputs:
 Usage:
   python3 build.py                     build docs/ (offline, uses the cache)
   python3 build.py --cinemeta          also fetch Cinemeta data for titles not in the cache yet
-  python3 build.py --base-url URL      serve logos from your own host, e.g.
-                                       https://YOU.github.io/stremio-heroes
+  python3 build.py --tv-refresh        also download fresh live TV channel lists (see livetv.py)
+  python3 build.py --base-url URL      the published address of docs/ (used for logo links),
+                                       default https://kellogs12.github.io/marvel-dc-stremio
 Only the Python 3 standard library is used.
 """
 import argparse
@@ -26,6 +27,9 @@ import sys
 import urllib.error
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import livetv  # noqa: E402  (lives next to this file)
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 UPSTREAM = os.path.join(ROOT, 'upstream')
 CURATION = os.path.join(ROOT, 'curation')
@@ -35,6 +39,7 @@ SITE = os.path.join(ROOT, 'docs')  # GitHub Pages serves this folder
 # Bump this whenever the manifests change (catalog list or names, logos), then reinstall the
 # addon in Stremio: Stremio keeps the manifest it saw at install time.
 VERSION = '1.0.0'
+DEFAULT_BASE_URL = 'https://kellogs12.github.io/marvel-dc-stremio'
 CINEMETA = 'https://v3-cinemeta.strem.io/meta/{type}/{id}.json'
 METAHUB_POSTER = 'https://images.metahub.space/poster/medium/{id}/img'
 
@@ -422,7 +427,10 @@ def site_base(url):
 
 
 def build(args):
-    base = site_base(args.base_url)
+    base = site_base(args.base_url or DEFAULT_BASE_URL)
+    if args.tv_refresh:
+        print('Refreshing live TV channel lists...')
+        livetv.refresh(warn)
     cache = load_json(CACHE_FILE, {})
     plan = plan_addons(cache)
     if args.cinemeta:
@@ -466,6 +474,9 @@ def build(args):
         }
         write_json(os.path.join(tmp, brand, 'manifest.json'), manifest)
 
+    for cname, n in livetv.build(os.path.join(tmp, 'tv'), base, write_json):
+        summary.append(('AU Live TV', cname, n))
+
     for name in ('index.html', '404.html', '_headers'):
         shutil.copy(os.path.join(ROOT, 'web', name), os.path.join(tmp, name))
     open(os.path.join(tmp, '.nojekyll'), 'w').close()
@@ -475,7 +486,7 @@ def build(args):
 
     width = max([len(a) + len(c) for a, c, _ in summary] or [0]) + 3
     for a, c, n in summary:
-        print('  %-*s %4d titles' % (width, a + ' / ' + c, n))
+        print('  %-*s %4d %s' % (width, a + ' / ' + c, n, 'channels' if a == 'AU Live TV' else 'titles'))
     missing = sorted({cm_key(it) for built, _, _ in plan.values() for items in built.values() for it in items
                       if (cache.get(cm_key(it)) or {}).get('missing')})
     if missing:
@@ -489,7 +500,9 @@ def build(args):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--cinemeta', action='store_true', help='fetch Cinemeta data for titles missing from the cache')
-    ap.add_argument('--base-url', help='public https URL of the published docs folder, used for logo/background links')
+    ap.add_argument('--tv-refresh', action='store_true', help='download fresh live TV channel lists first')
+    ap.add_argument('--base-url', help='public https URL of the published docs folder, used for logo links '
+                                       '(default %s)' % DEFAULT_BASE_URL)
     build(ap.parse_args())
 
 

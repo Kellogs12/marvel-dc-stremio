@@ -3,6 +3,7 @@
 
   python3 check.py                      check docs/ files + every title against the Cinemeta cache
   python3 check.py --posters            also check that every poster image loads
+  python3 check.py --streams            also check that every live TV stream answers (run it in Australia)
   python3 check.py --url https://YOU.github.io/stremio-heroes
                                         check the published copy: HTTP 200, CORS header, same data
 Exit code is 1 if any error was found (warnings don't fail).
@@ -14,6 +15,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.request
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -122,17 +124,98 @@ def check_local():
                     y2 = re.match(r'\d{4}', str(cm.get('releaseInfo') or cm.get('year') or ''))
                     if y1 and y2 and abs(int(y1.group()) - int(y2.group())) > 1:
                         warn('%s: year %s but Cinemeta says %s' % (where, y1.group(), y2.group()))
+    check_tv(data)
     return data
 
 
-def http_get(url, first_byte_only=False):
+def check_tv(data):
+    """The live TV addon serves its own meta and stream files for every channel."""
+    mpath = os.path.join(SITE, 'tv', 'manifest.json')
+    if not os.path.exists(mpath):
+        err('tv: manifest.json missing (run build.py)')
+        return
+    m = json.load(open(mpath, encoding='utf-8'))
+    if not SEMVER.match(m.get('version', '')):
+        err('tv: version "%s" is not semver' % m.get('version'))
+    res = {r['name'] if isinstance(r, dict) else r: r for r in m.get('resources', [])}
+    prefixes = []
+    for name in ('meta', 'stream'):
+        r = res.get(name)
+        if not isinstance(r, dict) or r.get('types') != ['tv'] or not r.get('idPrefixes'):
+            err('tv: manifest needs a "%s" resource for type tv with idPrefixes' % name)
+        else:
+            prefixes = r['idPrefixes']
+    data['tv'] = {'manifest': m, 'catalogs': {}}
+    seen = set()
+    for cat in m.get('catalogs', []):
+        path = os.path.join(SITE, 'tv', 'catalog', cat['type'], cat['id'] + '.json')
+        if cat['type'] != 'tv' or not exact_case_exists(path):
+            err('tv: catalog %s missing or not type tv' % cat['id'])
+            continue
+        metas = json.load(open(path, encoding='utf-8')).get('metas') or []
+        data['tv']['catalogs'][cat['id']] = metas
+        if not metas:
+            err('tv/%s: empty catalog' % cat['id'])
+        for mt in metas:
+            where = 'tv/%s %s "%s"' % (cat['id'], mt.get('id'), mt.get('name'))
+            cid = str(mt.get('id'))
+            if not re.match(r'^[a-z0-9-]+$', cid) or not any(cid.startswith(p) for p in prefixes):
+                err('%s: id must be lowercase [a-z0-9-] and start with %s' % (where, prefixes))
+            if cid in seen:
+                err('%s: id used twice' % where)
+            seen.add(cid)
+            if mt.get('type') != 'tv' or not mt.get('name'):
+                err('%s: needs type tv and a name' % where)
+            if not str(mt.get('poster', '')).startswith('https://'):
+                err('%s: poster missing or not https' % where)
+            for kind in ('meta', 'stream'):
+                if not exact_case_exists(os.path.join(SITE, 'tv', kind, 'tv', cid + '.json')):
+                    err('%s: %s/tv/%s.json missing' % (where, kind, cid))
+            spath = os.path.join(SITE, 'tv', 'stream', 'tv', cid + '.json')
+            if os.path.exists(spath):
+                streams = json.load(open(spath, encoding='utf-8')).get('streams') or []
+                if not streams or not all(str(s.get('url', '')).startswith('https://') for s in streams):
+                    err('%s: needs at least one https stream (Stremio Web blocks http)' % where)
+
+
+def check_streams(data):
+    """Fetch the first KB of every live TV stream. Streams are geo-locked to Australia."""
+    urls = {}
+    for metas in data.get('tv', {}).get('catalogs', {}).values():
+        for mt in metas:
+            spath = os.path.join(SITE, 'tv', 'stream', 'tv', mt['id'] + '.json')
+            for s in json.load(open(spath, encoding='utf-8')).get('streams', []):
+                urls[s['url']] = '%s "%s"' % (mt['id'], mt['name'])
+
+    def probe(url):
+        status, headers, body = http_get(url, max_bytes=2048)
+        ctype = {k.lower(): v for k, v in headers.items()}.get('content-type', '')
+        ok = status in (200, 206) and (body[:7] == b'#EXTM3U' or 'mpegurl' in ctype or ctype.startswith('video/'))
+        return url, ok, status, ctype
+
+    print('Checking %d live TV streams (this needs an Australian connection)...' % len(urls))
+    bad = 0
+    plex = sorted(u for u in urls if 'plex.tv' in u)  # Plex rate-limits parallel requests (HTTP 429)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+        results = list(pool.map(probe, sorted(set(urls) - set(plex))))
+    for u in plex:
+        results.append(probe(u))
+        time.sleep(0.3)
+    for url, ok, status, ctype in results:
+        if not ok:
+            bad += 1
+            warn('stream for %s -> %s %s' % (urls[url], describe(status, b''), ctype))
+    print('  %d of %d streams answered' % (len(urls) - bad, len(urls)))
+
+
+def http_get(url, first_byte_only=False, max_bytes=None):
     headers = {'User-Agent': 'stremio-heroes-check/1.0', 'Origin': 'https://web.stremio.com'}
     if first_byte_only:
         headers['Range'] = 'bytes=0-0'
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=25) as r:
-            return r.status, dict(r.headers), r.read()
+            return r.status, dict(r.headers), r.read() if max_bytes is None else r.read(max_bytes)
     except urllib.error.HTTPError as e:
         return e.code, dict(e.headers), b''
     except Exception as e:
@@ -210,11 +293,14 @@ def check_remote(base, data):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--posters', action='store_true', help='check every poster and logo URL loads as an image')
+    ap.add_argument('--streams', action='store_true', help='check every live TV stream answers (from Australia)')
     ap.add_argument('--url', help='published base URL (the folder that contains marvel/ and dc/)')
     args = ap.parse_args()
     data = check_local()
     if args.posters:
         check_posters(data)
+    if args.streams:
+        check_streams(data)
     if args.url:
         check_remote(args.url, data)
     total = sum(len(m) for b in data.values() for m in b['catalogs'].values())

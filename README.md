@@ -1,7 +1,8 @@
 # Marvel & DC catalogs for Stremio (self-hosted)
 
-Replacements for the community **Marvel** and **DC Universe** Stremio addons, built as plain
-static files so they can be hosted for free and never "run out" of server time.
+Replacements for the community **Marvel** and **DC Universe** Stremio addons, plus an **AU Live
+TV** addon, all built as plain static files so they can be hosted for free and never "run out" of
+server time.
 
 ## Why the originals stopped working
 
@@ -32,6 +33,18 @@ wrong kind so they wouldn't open, typos, duplicates, non-Marvel/DC titles), 87 m
 added through October 2026 (565 in total), and descriptions, genres and ratings filled in. Every
 title was checked against Cinemeta so its detail page opens.
 
+**AU Live TV** (Discover → TV): free, official live streams, refreshed daily by a GitHub Action.
+- *Melbourne Free-to-Air*: ABC, SBS, NITV, Seven, Nine, 10, C31 and their multichannels, in
+  channel-number order.
+- *Free Channels*: the networks' free online-only channels (7plus, 9Now, 10, SBS, ABC: AFLW, 7AFL,
+  FIFA+, BBC News, Sky News Now, …) plus Red Bull TV, Al Jazeera, CNA and DW.
+- *Plex Live TV* and *Samsung TV Plus*: their free Australian lineups.
+
+The channel lists come from [i.mjh.nz](https://i.mjh.nz) (Matt Huisman),
+[BuddyChewChew/app-m3u-generator](https://github.com/BuddyChewChew/app-m3u-generator) (Plex) and
+[apsattv.com](https://www.apsattv.com) (Samsung); every stream is the broadcaster's or service's own.
+The broadcasters only allow these streams **from Australia**, so a VPN must exit in Australia.
+
 ## Install in Stremio
 
 Published with GitHub Pages at **https://kellogs12.github.io/marvel-dc-stremio/**
@@ -42,6 +55,7 @@ Published with GitHub Pages at **https://kellogs12.github.io/marvel-dc-stremio/*
    Stremio click **+ Add addon**, paste a manifest URL, click **Add**, then **Install**:
    - `https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json`
    - `https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json`
+   - `https://kellogs12.github.io/marvel-dc-stremio/tv/manifest.json` (AU Live TV)
 
    (Stremio 4: paste the URL into the Addons search box instead.)
 
@@ -51,8 +65,9 @@ Published with GitHub Pages at **https://kellogs12.github.io/marvel-dc-stremio/*
    appears, use **Install via Stremio Web** or the **+ Add addon** paste method instead.
 3. Addons sync with your Stremio account, so they appear on your TV and phone too.
 
-The catalogs show up as rows on the Board and under **Discover → Marvel / DC**. Titles open
-normally; your other installed addons provide the streams.
+The catalogs show up as rows on the Board and under **Discover → Marvel / DC / TV**. Marvel and DC
+titles open normally and your other installed addons provide the streams; AU Live TV channels
+bring their own stream.
 
 ## Using with AIOStreams
 
@@ -67,9 +82,11 @@ suspended Render server, and Marvel's at the Deno server that keeps going down m
    instead.
 2. **Addons → Installed**: switch off (or delete) **Marvel Universe** and **DC Universe**.
 3. **Addons → Marketplace**: search for **Custom** → **Configure**, set a name and paste the
-   manifest URL → **Install**. Do this twice:
+   manifest URL → **Install**. Do this once per addon:
    - `DC Universe`: `https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json`
    - `Marvel`: `https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json`
+   - `AU Live TV`: `https://kellogs12.github.io/marvel-dc-stremio/tv/manifest.json`. In its form
+     also turn on **Result Passthrough**, so AIOStreams' stream filters never hide a channel.
 4. **Addons → Installed → Catalogs**: the new catalogs are tagged *New*. Make sure they're
    switched on, and drag them into the order you like.
 5. **Save & Install**: the card must say **Save Configuration** with *your* UUID (if it says
@@ -84,11 +101,14 @@ suspended Render server, and Marvel's at the Deno server that keeps going down m
 
 ```
 build.py        builds docs/ from upstream/ + curation/ + cache/
+livetv.py       the AU Live TV part: downloads channel lists (--tv-refresh) and writes docs/tv/
 serve.py        local test server with the CORS header Stremio needs
 check.py        validates docs/ and, with --url, the published copy
 upstream/       data files from the original addons (MIT licence, see upstream/*/LICENSE)
 curation/       our fixes: corrected ids/titles, watch orders, newer titles, DCU catalog
-cache/          Cinemeta descriptions/genres/ratings/dates so builds work offline
+cache/          Cinemeta descriptions/genres/ratings/dates and the live TV channel lists (cache/tv/)
+                so builds work offline
+.github/        refresh-live-tv.yml: GitHub Action that rebuilds AU Live TV every day
 web/            install page, 404 page and _headers (copied into docs/ on every build;
                 edit them here, not in docs/)
 docs/           THE OUTPUT: GitHub Pages serves this folder (Settings → Pages: main, /docs)
@@ -106,11 +126,20 @@ If you no longer have it, get a fresh copy:
 git clone https://github.com/Kellogs12/marvel-dc-stremio.git
 ```
 
+AU Live TV updates itself: a GitHub Action rebuilds it every morning and publishes any channel
+changes. So before editing, always fetch its latest commits first:
+
+```bash
+git pull
+```
+
 1. Edit `curation/marvel.json` / `curation/dc.json` (format below).
-2. Rebuild and check. `build.py` warns about any fix that matched nothing:
+2. Rebuild and check. `build.py` warns about any fix that matched nothing (add `--tv-refresh` to
+   also re-download the live TV lists, and run `python3 check.py --streams` from Australia to test
+   every channel):
 
    ```bash
-   python3 build.py --cinemeta --base-url https://kellogs12.github.io/marvel-dc-stremio
+   python3 build.py --cinemeta
    ```
 
    ```bash
@@ -185,6 +214,8 @@ deploy Pages?* choose **Get started** → **Drag and drop your files** → name 
 | AIOStreams error "Failed to fetch manifest for *X*" | That addon's server is down or gone, and AIOStreams won't save while it's on | Switch that addon off (you can turn it back on later), then save |
 | AIOStreams says "Reinstall required" (or "Reinstall recommended") | Rows were added, removed or reordered, so Stremio's saved copy is out of date | Reinstall AIOStreams in Stremio (step 6 above) |
 | No addons listed at all in Stremio | The addon (or AIOStreams) isn't installed in your Stremio account | Install it again with **+ Add addon**; addons sync to all your devices |
+| A live TV channel won't play | The broadcasters only serve these streams in Australia, and a few FAST channels come and go | Make sure any VPN exits in Australia. Lists refresh daily; `python3 check.py --streams` shows which channels answer right now |
+| Some Samsung TV Plus channels fail only on one device | A VPN or network DNS that rewrites CloudFront addresses breaks those streams | Try that device without the VPN's DNS feature |
 | `127.0.0.1` addon works on the Mac only | Local test address | Use the published GitHub Pages address everywhere else |
 
 ## Credits

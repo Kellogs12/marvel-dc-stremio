@@ -1,0 +1,43 @@
+# Rebuilds the AU Live TV addon every day so channel lists (and Plex's stream links) stay current.
+name: Refresh live TV
+
+on:
+  schedule:
+    - cron: '30 17 * * *'   # 04:30 Melbourne time (AEDT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-live-tv
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild with fresh channel lists
+        run: python3 build.py --tv-refresh
+
+      - name: Check the build
+        run: python3 check.py
+
+      - name: Publish if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Channel lists unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Refresh live TV channel lists"
+          git push
+          # Pushes made with the workflow token don't always start a Pages build, so ask for one.
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
