@@ -1,0 +1,1498 @@
+{
+ "_about": "Curated 2026-10-16. Watch orders follow Marvel.com \"MCU timeline order on Disney+\" (2026-06-02); every id verified in Cinemeta by two independent checks.",
+ "itemFixes": [
+  {
+   "matchImdbId": "tt10676052",
+   "matchTitle": "The Fantastic: Four First Steps",
+   "field": "title",
+   "to": "The Fantastic Four: First Steps",
+   "note": "Cinemeta meta/movie/tt10676052 returns name 'The Fantastic Four: First Steps' (2025, released 2025-07-25), and the official Marvel.com timeline uses the same ti"
+  },
+  {
+   "matchImdbId": "tt36042156",
+   "matchTitle": "The Punisher: One Last Kill",
+   "field": "type",
+   "to": "movie",
+   "note": "Cinemeta meta/movie/tt36042156 resolves to 'The Punisher: One Last Kill' (released 2026-05-12), while meta/series/tt36042156 returns {} (not found). IMDb sugges"
+  },
+  {
+   "matchImdbId": "tt0098512",
+   "matchTitle": "The Incredible Hulk Returns",
+   "field": "imdbId",
+   "to": "tt0095368",
+   "note": "Confirmed swap (moviesData[7]). Cinemeta movie/tt0098512 = 'The Trial of the Incredible Hulk' (1989) and movie/tt0095368 = 'The Incredible Hulk Returns' (1988)."
+  },
+  {
+   "matchImdbId": "tt0095368",
+   "matchTitle": "The Trial of the Incredible Hulk",
+   "field": "imdbId",
+   "to": "tt0098512",
+   "note": "Confirmed swap (moviesData[8]). Cinemeta movie/tt0098512 = 'The Trial of the Incredible Hulk' (1989). The (id, title) match pairs are distinct, so the two fixes"
+  },
+  {
+   "matchImdbId": "tt0036697",
+   "matchTitle": "Captian America",
+   "field": "title",
+   "to": "Captain America",
+   "note": "Typo. Cinemeta movie/tt0036697 = 'Captain America' (1944 Republic serial)."
+  },
+  {
+   "matchImdbId": "tt0119781",
+   "matchTitle": "Nick Fury: Agent of S.H.I.E.L.D",
+   "field": "title",
+   "to": "Nick Fury: Agent of S.H.I.E.L.D.",
+   "note": "Missing final period in the acronym. Cinemeta movie/tt0119781 = 'Nick Fury: Agent of Shield' (1998)."
+  },
+  {
+   "matchImdbId": "tt0120912",
+   "matchTitle": "Men in Black II'",
+   "field": "title",
+   "to": "Men in Black II",
+   "note": "Stray trailing apostrophe. Cinemeta movie/tt0120912 = 'Men in Black II' (2002)."
+  },
+  {
+   "matchImdbId": "tt11295300",
+   "matchTitle": "Expanding the Universe",
+   "field": "title",
+   "to": "Marvel Studios: Expanding the Universe",
+   "note": "Full official title. Cinemeta movie/tt11295300 = 'Marvel Studios: Expanding the Universe' (2019)."
+  },
+  {
+   "matchImdbId": "tt0128886",
+   "matchTitle": "Night Man",
+   "field": "year",
+   "to": "1997",
+   "note": "Wrong year (1977). Cinemeta series/tt0128886 = 'NightMan' (1997–1999), the Malibu/Ultraverse series. Its upstream position, between 1977 and 2001 items, stays c"
+  },
+  {
+   "matchImdbId": "tt14094206",
+   "matchTitle": "Marvel Studios Assembled",
+   "field": "title",
+   "to": "Marvel Studios: Assembled",
+   "note": "Cinemeta series/tt14094206 = 'Marvel Studios: Assembled' (2021–2024)."
+  },
+  {
+   "matchImdbId": "tt23779108",
+   "matchTitle": "Marvel Lucha Libre Edition: El origen de la mascara",
+   "field": "title",
+   "to": "Marvel Lucha Libre Edition: El origen de la máscara",
+   "note": "Missing accent. Cinemeta series/tt23779108 = 'Marvel Lucha Libre Edition: El origen de la máscara'. The year stays 2022, as IMDb suggest gives y=2022."
+  },
+  {
+   "matchImdbId": "tt0112175",
+   "matchTitle": " Spider-Man",
+   "field": "title",
+   "to": "Spider-Man: The Animated Series",
+   "note": "Leading space in the title. Cinemeta series/tt0112175 = 'Spider-Man: The Animated Series' (1994–1998). The full name also distinguishes it from the other 'Spide"
+  },
+  {
+   "matchImdbId": "tt7726152",
+   "matchTitle": " Super Hero Adventures",
+   "field": "title",
+   "to": "Marvel Super Hero Adventures",
+   "note": "Leading space and truncated title. Cinemeta series/tt7726152 = 'Marvel Super Hero Adventures' (2017–2020)."
+  },
+  {
+   "matchImdbId": "tt1722512",
+   "matchTitle": "Ultimate Spide-Man",
+   "field": "title",
+   "to": "Ultimate Spider-Man",
+   "note": "Typo. Cinemeta series/tt1722512 = 'Ultimate Spider-Man' (2012–2017)."
+  },
+  {
+   "matchImdbId": "tt2455546",
+   "matchTitle": "The Avengers: Assemble",
+   "field": "title",
+   "to": "Avengers Assemble",
+   "note": "Cinemeta series/tt2455546 = 'Avengers Assemble' (2012–2019)."
+  },
+  {
+   "matchImdbId": "tt13622958",
+   "matchTitle": "BayMax!",
+   "field": "title",
+   "to": "Baymax!",
+   "note": "Wrong capitalization. Cinemeta series/tt13622958 = 'Baymax!' (2022)."
+  },
+  {
+   "matchImdbId": "tt0976192",
+   "matchTitle": "Spectacular Spider-Man",
+   "field": "title",
+   "to": "The Spectacular Spider-Man",
+   "note": "Cinemeta series/tt0976192 = 'The Spectacular Spider-Man' (2008–2009)."
+  },
+  {
+   "matchImdbId": "tt1388589",
+   "matchTitle": "Super Hero Squad Show",
+   "field": "title",
+   "to": "The Super Hero Squad Show",
+   "note": "Cinemeta series/tt1388589 = 'The Super Hero Squad Show' (2009–2011)."
+  },
+  {
+   "matchImdbId": "tt5272052",
+   "matchTitle": "Super Hero Adventures: Frost Fight!",
+   "field": "title",
+   "to": "Marvel Super Hero Adventures: Frost Fight!",
+   "note": "Cinemeta movie/tt5272052 = 'Marvel Super Hero Adventures: Frost Fight!' (2015)."
+  },
+  {
+   "matchImdbId": "tt12583300",
+   "matchTitle": "Battleworld",
+   "field": "title",
+   "to": "Marvel Battleworld: Mystery of the Thanostones",
+   "note": "Cinemeta series/tt12583300 = 'Marvel Battleworld: Mystery of the Thanostones' (2020, 6 episodes)."
+  },
+  {
+   "matchImdbId": "tt6591446",
+   "matchTitle": "Future Avengers",
+   "field": "title",
+   "to": "Marvel Future Avengers",
+   "note": "Cinemeta series/tt6591446 = 'Marvel Future Avengers' (2017–2018)."
+  },
+  {
+   "matchImdbId": "tt0077091",
+   "matchTitle": "The Thing",
+   "field": "title",
+   "to": "Fred and Barney Meet the Thing",
+   "note": "Cinemeta series/tt0077091 = 'Fred and Barney Meet the Thing' (1979), the actual show the Thing segments aired in. The movie endpoint returns null for this id, s"
+  },
+  {
+   "matchImdbId": "tt16531868",
+   "matchTitle": "LEGO Avengers: Time Twisted",
+   "field": "type",
+   "to": "series",
+   "note": "IMDb suggest qid=tvMiniSeries (2022). Cinemeta series/tt16531868 = 'LEGO Marvel Avengers: Time Twisted' with 5 episodes. It is listed as movie upstream; the mov"
+  }
+ ],
+ "posterFixes": {
+  "tt21376674": "https://m.media-amazon.com/images/M/MV5BMzlmMDUyOTAtZmY4Yy00N2NhLTgxN2ItMzhiMjA0OTczMDY2XkEyXkFqcGc@._V1_SX300.jpg",
+  "tt32249216": "https://m.media-amazon.com/images/M/MV5BNDQzYzc0MTQtZjM4ZC00NmJhLTkyY2MtODVkODBkOTRkMjkxXkEyXkFqcGc@._V1_SX300.jpg",
+  "tt0036697": "https://images.metahub.space/poster/medium/tt0036697/img"
+ },
+ "removals": [
+  {
+   "catalogId": "movies",
+   "imdbId": "tt16360004",
+   "reason": "Corrupt entry (moviesData[116]). Cinemeta movie/tt16360004 is 'Spider-Man: Beyond the Spider-Verse' (2027), not Brand New Day, and 'animation' is not a valid St"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt15009428",
+   "reason": "Not a Marvel property: a 2024 Apple/Universal Matthew Vaughn spy film with no Marvel or Icon source. The upstream year (2023) is also wrong; Cinemeta and IMDb b"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt5989606",
+   "reason": "Red Sonja: Queen of Plagues is a Dynamite Entertainment motion comic, not Marvel."
+  }
+ ],
+ "additions": [
+  {
+   "catalogId": "movies",
+   "imdbId": "tt0078308",
+   "title": "Spider-Man Strikes Back",
+   "type": "movie",
+   "year": "1978",
+   "note": "1978 Spider-Man TV film starring Nicholas Hammond, released theatrically outside the US. Fits the existing TV-movie entries (1979 Captain America films, Hulk TV"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt0077328",
+   "title": "Spider-Man: The Dragon's Challenge",
+   "type": "movie",
+   "year": "1979",
+   "note": "Third Nicholas Hammond Spider-Man TV film. IMDb suggest lists it as tvMovie 1979. Cinemeta movie/tt0077328 returns 'Spider-Man: The Dragon's Challenge' but give"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt0099387",
+   "title": "The Death of the Incredible Hulk",
+   "type": "movie",
+   "year": "1990",
+   "note": "Third and last Bixby/Ferrigno Hulk TV film, after Returns (1988) and Trial (1989), which are already listed. IMDb lists it as tvMovie 1990, and Cinemeta movie/t"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt6612630",
+   "title": "Deadpool: No Good Deed",
+   "type": "movie",
+   "year": "2017",
+   "note": "Official Fox Deadpool short (shown before Logan), in line with the One-Shot shorts already listed. IMDb lists it as video 2017, and Cinemeta movie/tt6612630 ret"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt25363184",
+   "title": "Stan Lee",
+   "type": "movie",
+   "year": "2023",
+   "note": "2023 Disney+ documentary about Marvel's co-creator. The catalog already has Marvel documentaries (Assembling a Universe, 75 Years, Expanding the Universe). IMDb"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt36042156",
+   "title": "The Punisher: One Last Kill",
+   "type": "movie",
+   "year": "2026",
+   "note": "Marvel Television Special Presentation released on Disney+ on 2026-05-12, handled like Werewolf by Night and the GOTG Holiday Special, which are both in movies."
+  },
+  {
+   "catalogId": "series",
+   "imdbId": "tt0185116",
+   "title": "Spider-Man (Toei)",
+   "type": "series",
+   "year": "1978",
+   "note": "Marvel-licensed Japanese live-action Spider-Man series from Toei (1978-79). IMDb lists it as tvSeries 1978, and Cinemeta series/tt0185116 returns 'Spider-Man' ("
+  },
+  {
+   "catalogId": "series",
+   "imdbId": "tt10163846",
+   "title": "Marvel's Hero Project",
+   "type": "series",
+   "year": "2019",
+   "note": "Marvel docuseries on Disney+, consistent with the Marvel Studios: Legends and Assembled entries. IMDb lists it as tvSeries 2019, and Cinemeta series/tt10163846 "
+  },
+  {
+   "catalogId": "series",
+   "imdbId": "tt10162586",
+   "title": "Marvel's 616",
+   "type": "series",
+   "year": "2020",
+   "note": "Marvel docuseries on Disney+ (2020). IMDb lists it as tvSeries 2020, and Cinemeta series/tt10162586 returns 'Marvel 616' (2020–, 8 episodes)."
+  },
+  {
+   "catalogId": "series",
+   "imdbId": "tt30460310",
+   "title": "Spider-Noir",
+   "type": "series",
+   "year": "2026",
+   "note": "Live-action Sony/Marvel series starring Nicolas Cage, released on MGM+ 2026-05-25 and Prime Video 2026-05-27. IMDb lists it as tvSeries 2026, and Cinemeta serie"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt21376674",
+   "title": "The Marvel Super Heroes",
+   "type": "series",
+   "year": "1966",
+   "note": "Marvel's first animated TV series (1966), covering Captain America, Iron Man, Hulk, Thor and Namor. IMDb lists it as tvSeries 1966, and Cinemeta series/tt213766"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt0098137",
+   "title": "Pryde of the X-Men",
+   "type": "movie",
+   "year": "1989",
+   "note": "1989 animated X-Men pilot. IMDb lists it as tvMovie 1989, and Cinemeta movie/tt0098137 returns 'Pryde of the X-Men' (1989)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt1441105",
+   "title": "Black Panther",
+   "type": "series",
+   "year": "2010",
+   "note": "2010 BET animated Black Panther series (Djimon Hounsou). IMDb lists it as tvMiniSeries 2010, and Cinemeta series/tt1441105 returns 'Black Panther' (2010, 12 epi"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt1707807",
+   "title": "Marvel Anime: Iron Man",
+   "type": "series",
+   "year": "2010",
+   "note": "Madhouse/Marvel Anime series. IMDb lists it as tvSeries 2010, and Cinemeta series/tt1707807 returns 'Iron Man' (2010, 12 episodes). The title is prefixed to tel"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt2070571",
+   "title": "Marvel Anime: X-Men",
+   "type": "series",
+   "year": "2011",
+   "note": "Madhouse/Marvel Anime series. IMDb lists it as tvMiniSeries 2011, and Cinemeta series/tt2070571 returns 'X-Men' (2011, 15 episodes)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt1847521",
+   "title": "Marvel Anime: Wolverine",
+   "type": "series",
+   "year": "2011",
+   "note": "Madhouse/Marvel Anime series. IMDb lists it as tvMiniSeries 2011, and Cinemeta series/tt1847521 returns 'Wolverine' (2011, 12 episodes)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt1988235",
+   "title": "Marvel Anime: Blade",
+   "type": "series",
+   "year": "2011",
+   "note": "Madhouse/Marvel Anime series. IMDb lists it as tvMiniSeries 2011, and Cinemeta series/tt1988235 returns 'Blade' (2011, 12 episodes)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt3322904",
+   "title": "LEGO Marvel Super Heroes: Maximum Overload",
+   "type": "series",
+   "year": "2013",
+   "note": "Official LEGO Marvel animated special, matching the LEGO Marvel Avengers entries already in the catalog. IMDb lists it as tvMiniSeries 2013, and Cinemeta series"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt5371572",
+   "title": "LEGO Marvel Super Heroes: Avengers Reassembled",
+   "type": "movie",
+   "year": "2015",
+   "note": "Official LEGO Marvel animated special. IMDb lists it as tvShort 2015, and Cinemeta movie/tt5371572 returns 'Lego Marvel Super Heroes: Avengers Reassembled' (201"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt7387224",
+   "title": "LEGO Marvel Super Heroes - Guardians of the Galaxy: The Thanos Threat",
+   "type": "movie",
+   "year": "2017",
+   "note": "Official LEGO Marvel animated special. IMDb lists it as tvShort 2017, and Cinemeta movie/tt7387224 resolves (2017)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt7728344",
+   "title": "Marvel Rising: Secret Warriors",
+   "type": "movie",
+   "year": "2018",
+   "note": "Marvel Animation TV film (2018). IMDb lists it as tvMovie 2018, and Cinemeta movie/tt7728344 returns 'Marvel Rising: Secret Warriors' (2018-09-30)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt8205250",
+   "title": "LEGO Marvel Super Heroes - Black Panther: Trouble in Wakanda",
+   "type": "movie",
+   "year": "2018",
+   "note": "Official LEGO Marvel animated special. IMDb lists it as tvShort 2018, and Cinemeta movie/tt8205250 resolves (2018-06-04)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt10755644",
+   "title": "LEGO Marvel Spider-Man: Vexed by Venom",
+   "type": "movie",
+   "year": "2019",
+   "note": "Official LEGO Marvel animated special. IMDb lists it as tvShort 2019, and Cinemeta movie/tt10755644 returns 'Lego Marvel Spider-Man: Vexed by Venom' (2019)."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt33997565",
+   "title": "Iron Man and His Awesome Friends",
+   "type": "series",
+   "year": "2025",
+   "note": "Marvel Studios/Disney Jr. animated series, premiered 2025-08-11 and still running in 2026. IMDb lists it as tvSeries 2025, and Cinemeta series/tt33997565 return"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt38692893",
+   "title": "LEGO Marvel Avengers: Strange Tails",
+   "type": "series",
+   "year": "2025",
+   "note": "Two-part LEGO Marvel Avengers Disney+ special released November 2025, following Code Red and Mission Demolition, which are already listed. IMDb lists it as tvMi"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt0177457",
+   "title": "The Return of the Incredible Hulk",
+   "type": "movie",
+   "year": "1977",
+   "note": "The proposal wrongly listed this as unresolvable. Cinemeta movie/tt0177457 returns 'The Return of the Incredible Hulk' (1977, TV Movie, Bixby/Colvin/Ferrigno). "
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt31050020",
+   "title": "Once Upon a Deadpool",
+   "type": "movie",
+   "year": "2018",
+   "note": "Fox's PG-13 theatrical re-cut of Deadpool 2, released 2018-12-12. Cinemeta movie/tt31050020 returns 'Once Upon a Deadpool' (2018, released 2018-12-12). IMDb sug"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt13885628",
+   "title": "Marvel's Behind the Mask",
+   "type": "movie",
+   "year": "2021",
+   "note": "Marvel documentary special on Disney+ (2021-02-12), in line with the Marvel documentaries already listed (Assembling a Universe, 75 Years, Expanding the Univers"
+  },
+  {
+   "catalogId": "movies",
+   "imdbId": "tt32249216",
+   "title": "Bride of the Incredible Hulk",
+   "type": "movie",
+   "year": "1980",
+   "note": "LOWER PRIORITY. A feature version of the Bixby series two-parter 'Married', the same kind of compilation as the proposed 'Spider-Man Strikes Back' and 'Dragon's"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt9073722",
+   "title": "Marvel Rising: Initiation",
+   "type": "series",
+   "year": "2018",
+   "note": "The proposal claimed there were no IMDb hits for Marvel Rising extras. IMDb suggest: 'Marvel Rising: Initiation' tvMiniSeries 2018. Cinemeta series/tt9073722 re"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt9073746",
+   "title": "Marvel Rising: Heart of Iron",
+   "type": "movie",
+   "year": "2019",
+   "note": "LOWER PRIORITY. A 2019 Marvel Rising one-hour special. Cinemeta movie/tt9073746 returns 'Marvel Rising: Heart of Iron' (released 2019-03-31). Series returns nul"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt2047677",
+   "title": "Astonishing X-Men",
+   "type": "series",
+   "year": "2009",
+   "note": "OPTIONAL, Marvel Knights Animation motion comic. It is the same line as the proposed Black Panther (2010), which is a Marvel Knights Animation production. Cinem"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt1673449",
+   "title": "Spider-Woman, Agent of S.W.O.R.D.",
+   "type": "series",
+   "year": "2009",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt1673449 returns 'Spider-Woman, Agent of S.W.O.R.D.' (2009, 5 episodes). IMDb suggest: tvMiniSeries 2009"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt2212455",
+   "title": "Iron Man: Extremis",
+   "type": "series",
+   "year": "2010",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt2212455 returns 'Iron Man: Extremis' (2010, 6 episodes). IMDb suggest: tvMiniSeries 2010."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt1922373",
+   "title": "Thor & Loki: Blood Brothers",
+   "type": "series",
+   "year": "2011",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt1922373 returns 'Thor & Loki: Blood Brothers' (2011, 4 episodes). IMDb suggest: tvMiniSeries 2011."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt2824920",
+   "title": "Inhumans",
+   "type": "series",
+   "year": "2013",
+   "note": "OPTIONAL, Marvel Knights motion comic, not the 2017 live-action series tt4154858. Cinemeta series/tt2824920 returns 'Inhumans' (2013, 12 episodes). IMDb suggest"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt3077530",
+   "title": "Wolverine: Origin",
+   "type": "movie",
+   "year": "2013",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta movie/tt3077530 returns 'Wolverine: Origin' (released 2013-07-09). Series returns null. IMDb suggest: video 2013"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt8076362",
+   "title": "Wolverine Weapon X: Tomorrow Dies Today",
+   "type": "series",
+   "year": "2014",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt8076362 returns 'Wolverine Weapon X: Tomorrow Dies Today' (2014, 6 episodes). The movie endpoint return"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt3668942",
+   "title": "Wolverine vs. Sabretooth",
+   "type": "series",
+   "year": "2014",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt3668942 returns 'Wolverine vs. Sabretooth' (2014, 6 episodes). IMDb suggest: tvMiniSeries 2014."
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt4058600",
+   "title": "Marvel Knights: Eternals",
+   "type": "series",
+   "year": "2014",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt4058600 returns 'Marvel Knights: Eternals' (2014, 10 episodes). The movie endpoint returns an unrelated"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt8076312",
+   "title": "Wolverine Versus Sabretooth: Reborn",
+   "type": "series",
+   "year": "2015",
+   "note": "OPTIONAL, Marvel Knights motion comic. Cinemeta series/tt8076312 returns 'Wolverine Versus Sabretooth: Reborn' (2015, 4 episodes). The movie endpoint returns an"
+  },
+  {
+   "catalogId": "animations",
+   "imdbId": "tt6603254",
+   "title": "Marvel's Rocket & Groot",
+   "type": "series",
+   "year": "2017",
+   "note": "LOWER PRIORITY, Disney XD animated shorts. Cinemeta series/tt6603254 returns \"Marvel's Rocket & Groot\" (2017, 12 episodes). The movie endpoint returns an unrela"
+  }
+ ],
+ "orderedCatalogs": [
+  {
+   "catalogId": "marvel-mcu",
+   "policy": "Follows the official Marvel.com/Disney+ 'MCU Complete Timeline' (article 'See the Complete MCU Timeline on Disney+', published 2026-06-02, live copy fetched 2026-10-16; 80 entries ending with The Punisher: One Last Kill). Each show appears once, using one IMDb id, at the position of its first season. Where the official list splits seasons, the note says where the later seasons go. The five Marvel ",
+   "sources": [
+    "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus (published 2026-06-02; fetched 2026-10-16; cached at scratchpad/curation/web/marvel_timeline_dplus.html, text at curation/web/official_text.txt)",
+    "https://www.marvel.com/articles/tv-shows/marvel-television-visionquest-release-date (VisionQuest premieres 2026-10-14 on Disney+)",
+    "https://www.laughingplace.com/disney-entertainment/visionquest-disney-plus-mcu-episode-guide/ (premiere moved up to 2026-10-13 6PM PT)"
+   ],
+   "items": [
+    {
+     "imdbId": "tt13968252",
+     "title": "Eyes of Wakanda",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt0458339",
+     "title": "Captain America: The First Avenger",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt3067038",
+     "title": "Marvel One-Shot: Agent Carter",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt4154664",
+     "title": "Captain Marvel",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt0371746",
+     "title": "Iron Man",
+     "type": "movie",
+     "year": "2008"
+    },
+    {
+     "imdbId": "tt1228705",
+     "title": "Iron Man 2",
+     "type": "movie",
+     "year": "2010"
+    },
+    {
+     "imdbId": "tt0800080",
+     "title": "The Incredible Hulk",
+     "type": "movie",
+     "year": "2008"
+    },
+    {
+     "imdbId": "tt2011109",
+     "title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt0800369",
+     "title": "Thor",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt2011118",
+     "title": "Marvel One-Shot: The Consultant",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt0848228",
+     "title": "The Avengers",
+     "type": "movie",
+     "year": "2012"
+    },
+    {
+     "imdbId": "tt2247732",
+     "title": "Marvel One-Shot: Item 47",
+     "type": "movie",
+     "year": "2012"
+    },
+    {
+     "imdbId": "tt1981115",
+     "title": "Thor: The Dark World",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt1300854",
+     "title": "Iron Man 3",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt3438640",
+     "title": "Marvel One-Shot: All Hail the King",
+     "type": "movie",
+     "year": "2014"
+    },
+    {
+     "imdbId": "tt1843866",
+     "title": "Captain America: The Winter Soldier",
+     "type": "movie",
+     "year": "2014"
+    },
+    {
+     "imdbId": "tt2015381",
+     "title": "Guardians of the Galaxy",
+     "type": "movie",
+     "year": "2014"
+    },
+    {
+     "imdbId": "tt3896198",
+     "title": "Guardians of the Galaxy Vol. 2",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt13623148",
+     "title": "I Am Groot",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt3322312",
+     "title": "Daredevil",
+     "type": "series",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt2357547",
+     "title": "Jessica Jones",
+     "type": "series",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt2395427",
+     "title": "Avengers: Age of Ultron",
+     "type": "movie",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt0478970",
+     "title": "Ant-Man",
+     "type": "movie",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt3322314",
+     "title": "Luke Cage",
+     "type": "series",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt3322310",
+     "title": "Iron Fist",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt4230076",
+     "title": "The Defenders",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt3498820",
+     "title": "Captain America: Civil War",
+     "type": "movie",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt3480822",
+     "title": "Black Widow",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt1825683",
+     "title": "Black Panther",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt2250912",
+     "title": "Spider-Man: Homecoming",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt5675620",
+     "title": "The Punisher",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt1211837",
+     "title": "Doctor Strange",
+     "type": "movie",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt3501632",
+     "title": "Thor: Ragnarok",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt5095030",
+     "title": "Ant-Man and the Wasp",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt4154756",
+     "title": "Avengers: Infinity War",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt4154796",
+     "title": "Avengers: Endgame",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt9140554",
+     "title": "Loki",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10168312",
+     "title": "What If...?",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt16027014",
+     "title": "Marvel Zombies",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt9140560",
+     "title": "WandaVision",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9376612",
+     "title": "Shang-Chi and the Legend of the Ten Rings",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9208876",
+     "title": "The Falcon and the Winter Soldier",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt6320628",
+     "title": "Spider-Man: Far From Home",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt9032400",
+     "title": "Eternals",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10872600",
+     "title": "Spider-Man: No Way Home",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9419884",
+     "title": "Doctor Strange in the Multiverse of Madness",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10160804",
+     "title": "Hawkeye",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10234724",
+     "title": "Moon Knight",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt9114286",
+     "title": "Black Panther: Wakanda Forever",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt13966962",
+     "title": "Echo",
+     "type": "series",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt10857160",
+     "title": "She-Hulk: Attorney at Law",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10857164",
+     "title": "Ms. Marvel",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10648342",
+     "title": "Thor: Love and Thunder",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt13623126",
+     "title": "Ironheart",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt15318872",
+     "title": "Werewolf by Night",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt13623136",
+     "title": "The Guardians of the Galaxy Holiday Special",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10954600",
+     "title": "Ant-Man and the Wasp: Quantumania",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt6791350",
+     "title": "Guardians of the Galaxy Vol. 3",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt13157618",
+     "title": "Secret Invasion",
+     "type": "series",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt10676048",
+     "title": "The Marvels",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt6263850",
+     "title": "Deadpool & Wolverine",
+     "type": "movie",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt15571732",
+     "title": "Agatha All Along",
+     "type": "series",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt18923754",
+     "title": "Daredevil: Born Again",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt14513804",
+     "title": "Captain America: Brave New World",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt20969586",
+     "title": "Thunderbolts*",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt10676052",
+     "title": "The Fantastic Four: First Steps",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt21066182",
+     "title": "Wonder Man",
+     "type": "series",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt36042156",
+     "title": "The Punisher: One Last Kill",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt22084616",
+     "title": "Spider-Man: Brand New Day",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt23112594",
+     "title": "VisionQuest",
+     "type": "series",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt3475734",
+     "title": "Marvel's Agent Carter",
+     "type": "series",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt2364582",
+     "title": "Marvel's Agents of S.H.I.E.L.D.",
+     "type": "series",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt4154858",
+     "title": "Inhumans",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt1236246",
+     "title": "Runaways",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt5614844",
+     "title": "Cloak & Dagger",
+     "type": "series",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt10266874",
+     "title": "Helstrom",
+     "type": "series",
+     "year": "2020"
+    },
+    {
+     "imdbId": "tt21357150",
+     "title": "Avengers: Doomsday",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt21361444",
+     "title": "Avengers: Secret Wars",
+     "type": "movie",
+     "year": "2027"
+    },
+    {
+     "imdbId": "tt13623128",
+     "title": "Armor Wars",
+     "type": "movie",
+     "year": "TBD"
+    }
+   ]
+  },
+  {
+   "catalogId": "release-order",
+   "policy": "Same 79-title set as marvel-mcu, sorted by actual first release or premiere date taken from Cinemeta meta.released. The One-Shots are dated by their home-media debut. Unreleased titles go at the end in planned release order: Avengers: Doomsday 2026-12-18, Avengers: Secret Wars 2027-12-17, then Armor Wars (undated). Sorting by real dates fixes upstream errors such as Jessica Jones before Age of Ult",
+   "sources": [
+    "https://v3-cinemeta.strem.io/meta/{movie|series}/{id}.json released dates (cached in scratchpad/curation/mcu_cache/)",
+    "https://www.marvel.com/articles/tv-shows/marvel-television-visionquest-release-date",
+    "https://www.laughingplace.com/disney-entertainment/visionquest-disney-plus-mcu-episode-guide/"
+   ],
+   "items": [
+    {
+     "imdbId": "tt0371746",
+     "title": "Iron Man",
+     "type": "movie",
+     "year": "2008"
+    },
+    {
+     "imdbId": "tt0800080",
+     "title": "The Incredible Hulk",
+     "type": "movie",
+     "year": "2008"
+    },
+    {
+     "imdbId": "tt1228705",
+     "title": "Iron Man 2",
+     "type": "movie",
+     "year": "2010"
+    },
+    {
+     "imdbId": "tt0800369",
+     "title": "Thor",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt0458339",
+     "title": "Captain America: The First Avenger",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt2011118",
+     "title": "Marvel One-Shot: The Consultant",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt2011109",
+     "title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+     "type": "movie",
+     "year": "2011"
+    },
+    {
+     "imdbId": "tt0848228",
+     "title": "The Avengers",
+     "type": "movie",
+     "year": "2012"
+    },
+    {
+     "imdbId": "tt2247732",
+     "title": "Marvel One-Shot: Item 47",
+     "type": "movie",
+     "year": "2012"
+    },
+    {
+     "imdbId": "tt1300854",
+     "title": "Iron Man 3",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt3067038",
+     "title": "Marvel One-Shot: Agent Carter",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt2364582",
+     "title": "Marvel's Agents of S.H.I.E.L.D.",
+     "type": "series",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt1981115",
+     "title": "Thor: The Dark World",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt3438640",
+     "title": "Marvel One-Shot: All Hail the King",
+     "type": "movie",
+     "year": "2014"
+    },
+    {
+     "imdbId": "tt1843866",
+     "title": "Captain America: The Winter Soldier",
+     "type": "movie",
+     "year": "2014"
+    },
+    {
+     "imdbId": "tt2015381",
+     "title": "Guardians of the Galaxy",
+     "type": "movie",
+     "year": "2014"
+    },
+    {
+     "imdbId": "tt3475734",
+     "title": "Marvel's Agent Carter",
+     "type": "series",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt3322312",
+     "title": "Daredevil",
+     "type": "series",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt2395427",
+     "title": "Avengers: Age of Ultron",
+     "type": "movie",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt0478970",
+     "title": "Ant-Man",
+     "type": "movie",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt2357547",
+     "title": "Jessica Jones",
+     "type": "series",
+     "year": "2015"
+    },
+    {
+     "imdbId": "tt3498820",
+     "title": "Captain America: Civil War",
+     "type": "movie",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt3322314",
+     "title": "Luke Cage",
+     "type": "series",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt1211837",
+     "title": "Doctor Strange",
+     "type": "movie",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt3322310",
+     "title": "Iron Fist",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt3896198",
+     "title": "Guardians of the Galaxy Vol. 2",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt2250912",
+     "title": "Spider-Man: Homecoming",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt4230076",
+     "title": "The Defenders",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt4154858",
+     "title": "Inhumans",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt3501632",
+     "title": "Thor: Ragnarok",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt5675620",
+     "title": "The Punisher",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt1236246",
+     "title": "Runaways",
+     "type": "series",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt1825683",
+     "title": "Black Panther",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt4154756",
+     "title": "Avengers: Infinity War",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt5614844",
+     "title": "Cloak & Dagger",
+     "type": "series",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt5095030",
+     "title": "Ant-Man and the Wasp",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt4154664",
+     "title": "Captain Marvel",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt4154796",
+     "title": "Avengers: Endgame",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt6320628",
+     "title": "Spider-Man: Far From Home",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt10266874",
+     "title": "Helstrom",
+     "type": "series",
+     "year": "2020"
+    },
+    {
+     "imdbId": "tt9140560",
+     "title": "WandaVision",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9208876",
+     "title": "The Falcon and the Winter Soldier",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9140554",
+     "title": "Loki",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt3480822",
+     "title": "Black Widow",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10168312",
+     "title": "What If...?",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9376612",
+     "title": "Shang-Chi and the Legend of the Ten Rings",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt9032400",
+     "title": "Eternals",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10160804",
+     "title": "Hawkeye",
+     "type": "series",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10872600",
+     "title": "Spider-Man: No Way Home",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt10234724",
+     "title": "Moon Knight",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt9419884",
+     "title": "Doctor Strange in the Multiverse of Madness",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10857164",
+     "title": "Ms. Marvel",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10648342",
+     "title": "Thor: Love and Thunder",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt13623148",
+     "title": "I Am Groot",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10857160",
+     "title": "She-Hulk: Attorney at Law",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt15318872",
+     "title": "Werewolf by Night",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt9114286",
+     "title": "Black Panther: Wakanda Forever",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt13623136",
+     "title": "The Guardians of the Galaxy Holiday Special",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10954600",
+     "title": "Ant-Man and the Wasp: Quantumania",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt6791350",
+     "title": "Guardians of the Galaxy Vol. 3",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt13157618",
+     "title": "Secret Invasion",
+     "type": "series",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt10676048",
+     "title": "The Marvels",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt13966962",
+     "title": "Echo",
+     "type": "series",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt6263850",
+     "title": "Deadpool & Wolverine",
+     "type": "movie",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt15571732",
+     "title": "Agatha All Along",
+     "type": "series",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt14513804",
+     "title": "Captain America: Brave New World",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt18923754",
+     "title": "Daredevil: Born Again",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt20969586",
+     "title": "Thunderbolts*",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt13623126",
+     "title": "Ironheart",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt10676052",
+     "title": "The Fantastic Four: First Steps",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt13968252",
+     "title": "Eyes of Wakanda",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt16027014",
+     "title": "Marvel Zombies",
+     "type": "series",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt21066182",
+     "title": "Wonder Man",
+     "type": "series",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt36042156",
+     "title": "The Punisher: One Last Kill",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt22084616",
+     "title": "Spider-Man: Brand New Day",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt23112594",
+     "title": "VisionQuest",
+     "type": "series",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt21357150",
+     "title": "Avengers: Doomsday",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt21361444",
+     "title": "Avengers: Secret Wars",
+     "type": "movie",
+     "year": "2027"
+    },
+    {
+     "imdbId": "tt13623128",
+     "title": "Armor Wars",
+     "type": "movie",
+     "year": "TBD"
+    }
+   ]
+  }
+ ]
+}

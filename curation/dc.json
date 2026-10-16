@@ -1,0 +1,806 @@
+{
+ "_about": "Curated 2026-10-16. DCEU order per TechRadar/TheWrap; DCU order per James Gunn (release order, Clayface set before Superman); every id verified in Cinemeta by two independent checks.",
+ "itemFixes": [
+  {
+   "matchImdbId": "tt19850008",
+   "matchTitle": "Untitled The Batman Sequel",
+   "field": "title",
+   "to": "The Batman: Part II",
+   "note": "Cinemeta meta/movie/tt19850008 name='The Batman: Part II'; IMDb suggest l='The Batman: Part II'"
+  },
+  {
+   "matchImdbId": "tt19850008",
+   "matchTitle": "Untitled The Batman Sequel",
+   "field": "year",
+   "to": "2028",
+   "note": "Cinemeta releaseInfo 2028, IMDb suggest y=2028; Warner Bros moved it from Oct 2027 to Feb 18 2028 (TheWrap, 2026-07-15). Still unreleased; it stays last in dc-b"
+  },
+  {
+   "matchImdbId": "tt0060153",
+   "matchTitle": "Batman",
+   "field": "title",
+   "to": "Batman: The Movie",
+   "note": "Cinemeta meta/movie/tt0060153 name='Batman: The Movie' (1966)"
+  },
+  {
+   "matchImdbId": "tt0072516",
+   "matchTitle": "Isis",
+   "field": "title",
+   "to": "The Secrets of Isis",
+   "note": "Cinemeta meta/series/tt0072516 name='The Secrets of Isis' (1975-1976)"
+  },
+  {
+   "matchImdbId": "tt8722888",
+   "matchTitle": "DC's Stargirl",
+   "field": "title",
+   "to": "Stargirl",
+   "note": "Cinemeta meta/series/tt8722888 name='Stargirl' (2020-2022)"
+  },
+  {
+   "matchImdbId": "tt8425532",
+   "matchTitle": "Pennyworth: The Origin of Batman's Butler",
+   "field": "title",
+   "to": "Pennyworth",
+   "note": "Cinemeta meta/series/tt8425532 name='Pennyworth' (2019-2022); IMDb suggest l='Pennyworth'"
+  },
+  {
+   "matchImdbId": "tt0044091",
+   "matchTitle": "Superman and the Mole Men",
+   "field": "title",
+   "to": "Superman and the Mole-Men",
+   "note": "Cinemeta meta/movie/tt0044091 name='Superman and the Mole-Men' (1951)"
+  },
+  {
+   "matchImdbId": "tt7713068",
+   "matchTitle": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+   "field": "title",
+   "to": "Birds of Prey and the Fantabulous Emancipation of One Harley Quinn",
+   "note": "Cinemeta meta/movie/tt7713068 name has no parentheses (cosmetic alignment with Cinemeta)"
+  },
+  {
+   "matchImdbId": "tmdb_1081412",
+   "matchTitle": "LEGO DC Super Hero Girls: Galactic Wonder",
+   "field": "imdbId",
+   "to": "tt6860792",
+   "note": "Cinemeta /meta/movie/tt6860792.json returns name 'LEGO DC Super Hero Girls: Galactic Wonder', releaseInfo 2017, moviedb_id '1081412' (the exact TMDB id upstream"
+  },
+  {
+   "matchImdbId": "tmdb_260192",
+   "matchTitle": "DC Heroes United",
+   "field": "imdbId",
+   "to": "tt34771292",
+   "note": "IMDb suggest: tt34771292 tvSeries 2024 'DC Heroes United'. Cinemeta /meta/series/tt34771292.json returns name 'DC Heroes United', releaseInfo '2024-', moviedb_i"
+  },
+  {
+   "matchImdbId": "tmdb_498464",
+   "matchTitle": "Adventures of Batman & Robin: Poison Ivy/The Penguin",
+   "field": "drop",
+   "to": "",
+   "note": "Home-video compilation with no IMDb/Cinemeta entry; cannot open in Stremio."
+  },
+  {
+   "matchImdbId": "tmdb_498429",
+   "matchTitle": "Batman Beyond: Tech Wars / Disappearing Inque",
+   "field": "drop",
+   "to": "",
+   "note": "Home-video compilation with no IMDb/Cinemeta entry; cannot open in Stremio."
+  },
+  {
+   "matchImdbId": "tmdb_498471",
+   "matchTitle": "Batman: The Animated Series - The Legend Begins",
+   "field": "drop",
+   "to": "",
+   "note": "Home-video compilation with no IMDb/Cinemeta entry; cannot open in Stremio."
+  },
+  {
+   "matchImdbId": "tmdb_472027",
+   "matchTitle": "Batman: The Dark Knight Returns",
+   "field": "drop",
+   "to": "",
+   "note": "Home-video compilation with no IMDb/Cinemeta entry; cannot open in Stremio."
+  },
+  {
+   "matchImdbId": "tmdb_371021",
+   "matchTitle": "Batman and Friends",
+   "field": "drop",
+   "to": "",
+   "note": "Home-video compilation with no IMDb/Cinemeta entry; cannot open in Stremio."
+  },
+  {
+   "matchImdbId": "tmdb_630656",
+   "matchTitle": "The Death and Return of Superman",
+   "field": "drop",
+   "to": "",
+   "note": "Home-video compilation with no IMDb/Cinemeta entry; cannot open in Stremio."
+  }
+ ],
+ "removals": [
+  {
+   "catalogId": "dc-series",
+   "imdbId": "tt10306320",
+   "reason": "Not a DC property. tt10306320 is the 2020 Spectrum Originals family drama (Bridget Regan, Shane McRae, Danielle Deadwyler; set in Mississippi, per the Cinemeta "
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt10306320",
+   "reason": "Not a DC property. tt10306320 is the 2020 Spectrum Originals family drama (Bridget Regan, Shane McRae, Danielle Deadwyler; set in Mississippi, per the Cinemeta "
+  }
+ ],
+ "additions": [
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt0044091",
+   "title": "Superman and the Mole-Men",
+   "type": "movie",
+   "year": "1951",
+   "note": "First Superman feature film (George Reeves); live-action DC theatrical feature missing from Movies"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt0060153",
+   "title": "Batman: The Movie",
+   "type": "movie",
+   "year": "1966",
+   "note": "Adam West theatrical feature; live-action DC feature missing from Movies (already in Batman Collection)"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt0084745",
+   "title": "Swamp Thing",
+   "type": "movie",
+   "year": "1982",
+   "note": "Wes Craven's DC adaptation; live-action DC theatrical feature missing from Movies"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt0088206",
+   "title": "Supergirl",
+   "type": "movie",
+   "year": "1984",
+   "note": "Helen Slater Supergirl; live-action DC theatrical feature missing from Movies"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt0098193",
+   "title": "The Return of Swamp Thing",
+   "type": "movie",
+   "year": "1989",
+   "note": "Swamp Thing sequel; live-action DC theatrical feature missing from Movies"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt8814476",
+   "title": "Supergirl",
+   "type": "movie",
+   "year": "2026",
+   "note": "DC Studios/DCU film, released 2026-06-26"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt34890576",
+   "title": "Clayface",
+   "type": "movie",
+   "year": "2026",
+   "note": "UPCOMING: DC Studios/DCU film with a firm theatrical date of 2026-10-23 (one week out) and a live Cinemeta entry; included like the upcoming The Batman: Part II"
+  },
+  {
+   "catalogId": "dc-series",
+   "imdbId": "tt0098919",
+   "title": "Swamp Thing",
+   "type": "series",
+   "year": "1990",
+   "note": "USA Network live-action series 1990-1993; missing from Series"
+  },
+  {
+   "catalogId": "dc-series",
+   "imdbId": "tt8712204",
+   "title": "Batwoman",
+   "type": "series",
+   "year": "2019",
+   "note": "Arrowverse series 2019-2022; was only in DC Modern Series"
+  },
+  {
+   "catalogId": "dc-series",
+   "imdbId": "tt8425532",
+   "title": "Pennyworth",
+   "type": "series",
+   "year": "2019",
+   "note": "Epix/HBO Max series 2019-2022; was only in DC Modern Series"
+  },
+  {
+   "catalogId": "dc-series",
+   "imdbId": "tt7049682",
+   "title": "Watchmen",
+   "type": "series",
+   "year": "2019",
+   "note": "HBO limited series 2019; was only in DC Modern Series"
+  },
+  {
+   "catalogId": "dc-series",
+   "imdbId": "tt26545992",
+   "title": "Lanterns",
+   "type": "series",
+   "year": "2026",
+   "note": "DCU HBO series, S1 aired 2026-08-16 to 2026-10-04"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt3489184",
+   "title": "Constantine",
+   "type": "series",
+   "year": "2014",
+   "note": "NBC 2014-2015 (later Arrowverse); 2012+ live-action DC series in Series but missing here"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt5083928",
+   "title": "Powerless",
+   "type": "series",
+   "year": "2017",
+   "note": "NBC 2017; 2012+ live-action DC series in Series but missing here"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt4276624",
+   "title": "Krypton",
+   "type": "series",
+   "year": "2018",
+   "note": "Syfy 2018-2019; 2012+ live-action DC series in Series but missing here"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt13624900",
+   "title": "Naomi",
+   "type": "series",
+   "year": "2022",
+   "note": "The CW 2022; 2012+ live-action DC series in Series but missing here"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt15358446",
+   "title": "Dead Boy Detectives",
+   "type": "series",
+   "year": "2024",
+   "note": "Netflix 2024; 2012+ live-action DC series in Series but missing here"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt15435876",
+   "title": "The Penguin",
+   "type": "series",
+   "year": "2024",
+   "note": "HBO 2024 (The Batman spin-off); in Series but missing here"
+  },
+  {
+   "catalogId": "dc_modern_series",
+   "imdbId": "tt26545992",
+   "title": "Lanterns",
+   "type": "series",
+   "year": "2026",
+   "note": "DCU HBO series, S1 aired 2026-08-16 to 2026-10-04"
+  },
+  {
+   "catalogId": "dc-superman",
+   "imdbId": "tt8814476",
+   "title": "Supergirl",
+   "type": "movie",
+   "year": "2026",
+   "note": "Superman (David Corenswet, 2nd-billed in the Cinemeta cast) appears; Superman Collection lists films featuring Superman"
+  },
+  {
+   "catalogId": "dc-superman",
+   "imdbId": "tt37833661",
+   "title": "Man of Tomorrow",
+   "type": "movie",
+   "year": "2027",
+   "note": "UPCOMING: Superman (2025) sequel, firm date 2027-07-09, filming wrapped; mirrors Batman Collection, which already carries the upcoming The Batman: Part II"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0247729",
+   "title": "Static Shock",
+   "type": "series",
+   "year": "2000",
+   "note": "DCAU animated series (2000-2004), missing from all three catalogs. Live check: IMDb suggest tvSeries 2000; Cinemeta series 'Static Shock' 2000-2004."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0260662",
+   "title": "The Zeta Project",
+   "type": "series",
+   "year": "2001",
+   "note": "DCAU Batman Beyond spin-off series (2001-2003). IMDb tvSeries 2001; Cinemeta series 'The Zeta Project' 2001-2003."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0343314",
+   "title": "Teen Titans",
+   "type": "series",
+   "year": "2003",
+   "note": "Teen Titans (2003-2006) series, missing. IMDb tvSeries 2003; Cinemeta series 'Teen Titans' 2003-2006."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0816671",
+   "title": "Teen Titans: Trouble in Tokyo",
+   "type": "movie",
+   "year": "2006",
+   "note": "Teen Titans series finale movie (2006). IMDb tvMovie 2006; Cinemeta movie 'Teen Titans: Trouble in Tokyo', released 2006-09-15."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0408427",
+   "title": "Swamp Thing",
+   "type": "series",
+   "year": "1990",
+   "note": "Swamp Thing animated series (1990-1991, Len Carlson cast). IMDb tvMiniSeries 1990; Cinemeta series 'Swamp Thing' 1990-1991."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1322240",
+   "title": "Watchmen: Motion Comic",
+   "type": "series",
+   "year": "2008",
+   "note": "DC Watchmen motion comic (2008-2009). IMDb tvMiniSeries 2008 'Watchmen' (Tom Stechschulte); Cinemeta series 'Watchmen' 2008-2009."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1186373",
+   "title": "Wonder Woman",
+   "type": "movie",
+   "year": "2009",
+   "note": "DC Universe Animated Original Movie #4 (2009-03-03). IMDb video 2009 (Keri Russell, Nathan Fillion); Cinemeta movie 'Wonder Woman' 2009, released 2009-03-03."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1295071",
+   "title": "Tales of the Black Freighter",
+   "type": "movie",
+   "year": "2009",
+   "note": "DC/Watchmen animated film (2009). IMDb video 2009 (Gerard Butler); Cinemeta movie 'Tales of the Black Freighter' 2009."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1384590",
+   "title": "Green Lantern: First Flight",
+   "type": "movie",
+   "year": "2009",
+   "note": "DCUAOM #5 (2009-07-28). IMDb video 2009; Cinemeta movie 'Green Lantern: First Flight', released 2009-07-28."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1601188",
+   "title": "DC Showcase: The Spectre",
+   "type": "movie",
+   "year": "2010",
+   "note": "DC Showcase short (2010). IMDb short 2010 'The Spectre' (Gary Cole); Cinemeta movie 'The Spectre' 2010."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1606600",
+   "title": "DC Showcase: Jonah Hex",
+   "type": "movie",
+   "year": "2010",
+   "note": "DC Showcase short (2010). IMDb video 2010 'Jonah Hex' (Thomas Jane); Cinemeta movie 'DC Showcase: Jonah Hex' 2010."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1663633",
+   "title": "DC Showcase: Green Arrow",
+   "type": "movie",
+   "year": "2010",
+   "note": "DC Showcase short (2010). IMDb short 2010 'Green Arrow' (Neal McDonough); Cinemeta movie 'Green Arrow' 2010."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt1683043",
+   "title": "Green Lantern: Emerald Knights",
+   "type": "movie",
+   "year": "2011",
+   "note": "DCUAOM #11 (2011). IMDb video 2011; Cinemeta movie 'Green Lantern: Emerald Knights', released 2011-06-07."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt2303889",
+   "title": "Super Best Friends Forever",
+   "type": "series",
+   "year": "2012",
+   "note": "DC Nation shorts series (2012), same family as the Amethyst / Bat Man of Shanghai / Shade entries already in the catalog. IMDb tvMiniSeries 2012; Cinemeta serie"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt4406248",
+   "title": "Vixen",
+   "type": "series",
+   "year": "2015",
+   "note": "CW Seed animated series (2015-2016); only 'Vixen: The Movie' is in the catalog now. IMDb tvSeries 2015; Cinemeta series 'Vixen' 2015-2016."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt5582302",
+   "title": "DC Super Hero Girls",
+   "type": "series",
+   "year": "2015",
+   "note": "Original DC Super Hero Girls web series (2015-2018), separate from the 2019 series tt9628244 already in the catalog. IMDb tvSeries 2015; Cinemeta series 'DC Sup"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt6404896",
+   "title": "Constantine: City of Demons",
+   "type": "series",
+   "year": "2018",
+   "note": "CW Seed series (2018-2019); only the movie cut tt9177882 is in the catalog now. IMDb tvSeries 2018; Cinemeta series 'Constantine: City of Demons' 2018-2019."
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt28279848",
+   "title": "Suicide Squad Isekai",
+   "type": "series",
+   "year": "2024",
+   "note": "DC anime series (2024, HBO Max/Hulu). IMDb tvSeries 2024; Cinemeta series 'Suicide Squad Isekai', released 2024-06-27. Do not use movie type: Cinemeta returns a"
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt0062544",
+   "title": "The Adventures of Batman",
+   "type": "series",
+   "year": "1968-1969",
+   "note": "Filmation Batman series (1968-1969), missing. IMDb tvSeries 1968; Cinemeta series 'The Adventures of Batman' 1968-1969."
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt0069641",
+   "title": "Super Friends",
+   "type": "series",
+   "year": "1973-1985",
+   "note": "Hanna-Barbera Super Friends (1973-1985); Batman is a core member, and the catalog already includes JL/JLU/JLA. IMDb tvSeries 1973 (one entry covers all Super Fr"
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt21110654",
+   "title": "Aztec Batman: Clash of Empires",
+   "type": "movie",
+   "year": "2025",
+   "note": "DCUAOM, released digitally in the US 2025-09-19 (Mexico theatrical 2025-09-18). IMDb movie 2025; Cinemeta movie 'Aztec Batman: Clash of Empires', released 2025-"
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt27621333",
+   "title": "Bat-Fam",
+   "type": "series",
+   "year": "2025",
+   "note": "Prime Video animated series (2025-). IMDb tvSeries 2025; Cinemeta series 'BAT-FAM' 2025- (served via a 307 redirect to cinemeta-live.strem.io, moviedb_id 225361"
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt32333324",
+   "title": "Batman: Knightfall - Part 1: Knightfall",
+   "type": "movie",
+   "year": "2026",
+   "note": "DCUAOM, released on digital 2026-08-25. IMDb movie 2026; Cinemeta movie 'Batman: Knightfall - Part 1: Knightfall', released 2026-08-25."
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt38807532",
+   "title": "Batman: Knightfall Part 2: Knightquest",
+   "type": "movie",
+   "year": "2026",
+   "note": "UPCOMING (status upcoming): officially announced for 2026-12-08 per Wikipedia's DCUAOM list, so not yet released. IMDb page exists (movie); Cinemeta movie 'Batm"
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt0034247",
+   "title": "Superman: The Mad Scientist",
+   "type": "movie",
+   "year": "1941",
+   "note": "First Fleischer Superman cartoon (1941, Oscar-nominated), the start of Superman animation. IMDb short 1941; Cinemeta movie 'Superman' 1941, released 1941-09-25."
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt0060012",
+   "title": "The New Adventures of Superman",
+   "type": "series",
+   "year": "1966-1970",
+   "note": "Filmation Superman series (1966-1970), missing. IMDb tvSeries 1966; Cinemeta series 'The New Adventures of Superman' 1966-1970."
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt0231046",
+   "title": "The Superman/Aquaman Hour of Adventure",
+   "type": "series",
+   "year": "1967-1968",
+   "note": "Filmation Superman/Aquaman package (1967-1968). IMDb tvSeries 1967; Cinemeta series 'The Superman/Aquaman Hour of Adventure' 1967-1968."
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt0069641",
+   "title": "Super Friends",
+   "type": "series",
+   "year": "1973-1985",
+   "note": "Hanna-Barbera Super Friends (1973-1985), Superman-led team show. IMDb tvSeries 1973; Cinemeta series 'Super Friends' 1973-1985. The same id is also added to dc-"
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt0213370",
+   "title": "Superman",
+   "type": "series",
+   "year": "1988",
+   "note": "Ruby-Spears Superman animated series (1988). IMDb tvSeries 1988; Cinemeta series 'Superman' 1988, released 1988-09-17."
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt37899471",
+   "title": "Krypto Saves the Day!",
+   "type": "series",
+   "year": "2025",
+   "note": "Krypto (Superman's dog) series: S1 August 2025, S2 2026-09-10 on DC Kids YouTube/HBO Max. Fits next to Krypto the Superdog. IMDb tvMiniSeries 2025; Cinemeta ser"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt28094697",
+   "title": "Beast Boy: Lone Wolf",
+   "type": "series",
+   "year": "2024",
+   "note": "Teen Titans Go! spin-off series (10 shorts) on Cartoon Network/YouTube, 2024-10-28 to 2024-10-31 (isitback.com, animationmagazine.net), listed on Wikipedia's DC"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt33406999",
+   "title": "Get Jiro!",
+   "type": "series",
+   "year": "2026",
+   "note": "DC Studios / Warner Bros. Animation adult anime of Anthony Bourdain's DC/Vertigo graphic novel. Premiered on Adult Swim's Toonami 2026-10-03, streaming on HBO M"
+  },
+  {
+   "catalogId": "dc-batman-animations",
+   "imdbId": "tt4818178",
+   "title": "Batman Unlimited",
+   "type": "series",
+   "year": "2015-2016",
+   "note": "Batman Unlimited web series, the companion to the three Batman Unlimited films already in the catalog. On Wikipedia's DC TV list (web series). IMDb suggest: tvS"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0337763",
+   "title": "Gotham Girls",
+   "type": "series",
+   "year": "2000",
+   "note": "DCAU-style web series with Harley Quinn, Poison Ivy, Catwoman and Batgirl (Arleen Sorkin, Tara Strong), 2000-2002, on Wikipedia's DC TV list. IMDb suggest: tvSe"
+  },
+  {
+   "catalogId": "dc-superman-animations",
+   "imdbId": "tt5963338",
+   "title": "The Adventures of Superboy",
+   "type": "series",
+   "year": "1966-1969",
+   "note": "Filmation Superboy, i.e. young Superman (Bob Hastings), 1966-1969, on Wikipedia's DC TV list. IMDb suggest: tvSeries 1966 (Bob Hastings, Janet Waldo). Cinemeta "
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0433278",
+   "title": "Aquaman",
+   "type": "series",
+   "year": "1967",
+   "note": "Filmation Aquaman series (1967/68-1970), on Wikipedia's DC TV list. IMDb suggest: tvSeries 1967 (Pat Harrington Jr.). Cinemeta series 'Aquaman' 1967–1969, relea"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0242224",
+   "title": "Plastic Man",
+   "type": "series",
+   "year": "1979",
+   "note": "The Plastic Man Comedy/Adventure Show (Ruby-Spears, 1979-1981, Michael Bell), on Wikipedia's DC TV list. IMDb suggest: tvSeries 1979 'Plastic Man'. Cinemeta ser"
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt0210425",
+   "title": "The Kid Super Power Hour with Shazam!",
+   "type": "series",
+   "year": "1981",
+   "note": "Filmation Shazam!/Hero High series (1981-1982), on Wikipedia's DC TV list. IMDb suggest: tvSeries 1981. Cinemeta series 'The Kid Super Power Hour with Shazam!' "
+  },
+  {
+   "catalogId": "dc-animations",
+   "imdbId": "tt6075386",
+   "title": "Lobo",
+   "type": "series",
+   "year": "2000",
+   "note": "Lobo web series, 2000 (Kevin Michael Richardson). Lower notability, optional. On Wikipedia's DC TV list (web series). IMDb suggest: tvSeries 2000. Cinemeta seri"
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt37833661",
+   "title": "Man of Tomorrow",
+   "type": "movie",
+   "year": "2027",
+   "note": "Upcoming: theatrical release 2027-07-09 (Superman sequel, filming wrapped)."
+  },
+  {
+   "catalogId": "dc-movies",
+   "imdbId": "tt19850008",
+   "title": "The Batman: Part II",
+   "type": "movie",
+   "year": "2028",
+   "note": "Upcoming: theatrical release 2028-02-18."
+  }
+ ],
+ "sequences": [
+  {
+   "catalogId": "*",
+   "ids": [
+    "tt29195117",
+    "tt30150907",
+    "tt30150917"
+   ],
+   "note": "Justice League: Crisis on Infinite Earths Parts One, Two, Three"
+  }
+ ],
+ "orderedCatalogs": [
+  {
+   "catalogId": "dc-chronological",
+   "policy": "DCEU only (Warner Bros. DC Extended Universe, 2013-2023), in in-universe story order. This is the order TheWrap, TechRadar and TechAdvisor use: Wonder Woman (1918), WW84 (1984), Man of Steel, BvS, Suicide Squad, Justice League with Zack Snyder's Justice League beside it as an alternate cut, Aquaman, Shazam!, Birds of Prey, The Suicide Squad, Peacemaker, Black Adam, Shazam! Fury of the Gods, The Fl",
+   "sources": [
+    "https://thewrap.com/dc-movies-in-order-how-to-watch (DCEU chronological order: WW, WW84, MoS, BvS, SS, JL/ZSJL, Aquaman, Shazam!, BoP, TSS, Black Adam, Shazam 2, The Flash, Aquaman 2)",
+    "https://www.techradar.com/how-to/how-to-watch-the-dceu-movies-in-order (places Peacemaker after The Suicide Squad and Blue Beetle after The Flash)",
+    "https://www.techadvisor.com/article/1816192/how-to-watch-the-dc-movies-and-series-in-order.html (Peacemaker season one between The Suicide Squad and Black Adam)"
+   ],
+   "items": [
+    {
+     "imdbId": "tt0451279",
+     "title": "Wonder Woman",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt7126948",
+     "title": "Wonder Woman 1984",
+     "type": "movie",
+     "year": "2020"
+    },
+    {
+     "imdbId": "tt0770828",
+     "title": "Man of Steel",
+     "type": "movie",
+     "year": "2013"
+    },
+    {
+     "imdbId": "tt2975590",
+     "title": "Batman v Superman: Dawn of Justice",
+     "type": "movie",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt1386697",
+     "title": "Suicide Squad",
+     "type": "movie",
+     "year": "2016"
+    },
+    {
+     "imdbId": "tt0974015",
+     "title": "Justice League",
+     "type": "movie",
+     "year": "2017"
+    },
+    {
+     "imdbId": "tt12361974",
+     "title": "Zack Snyder's Justice League",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt1477834",
+     "title": "Aquaman",
+     "type": "movie",
+     "year": "2018"
+    },
+    {
+     "imdbId": "tt0448115",
+     "title": "Shazam!",
+     "type": "movie",
+     "year": "2019"
+    },
+    {
+     "imdbId": "tt7713068",
+     "title": "Birds of Prey and the Fantabulous Emancipation of One Harley Quinn",
+     "type": "movie",
+     "year": "2020"
+    },
+    {
+     "imdbId": "tt6334354",
+     "title": "The Suicide Squad",
+     "type": "movie",
+     "year": "2021"
+    },
+    {
+     "imdbId": "tt13146488",
+     "title": "Peacemaker",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt6443346",
+     "title": "Black Adam",
+     "type": "movie",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt10151854",
+     "title": "Shazam! Fury of the Gods",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt0439572",
+     "title": "The Flash",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt9362930",
+     "title": "Blue Beetle",
+     "type": "movie",
+     "year": "2023"
+    },
+    {
+     "imdbId": "tt9663764",
+     "title": "Aquaman and the Lost Kingdom",
+     "type": "movie",
+     "year": "2023"
+    }
+   ]
+  },
+  {
+   "catalogId": "dcu",
+   "policy": "DC Studios DCU Chapter One in story order. Release order per James Gunn, except Clayface: Gunn says it is set before Superman, and it is the origin of the Clayface seen in Creature Commandos (superbromovies.com DCU timeline).",
+   "sources": [
+    "https://nerdist.com/article/james-gunn-confirms-dcu-timeline-release-order/ (Gunn, May 2025: DCU timeline is basically release order; names Creature Commandos, Superman, Peacemaker, Lanterns, Supergirl)",
+    "https://superbromovies.com/2026/09/28/dcu-timeline/ (release order with dates: Creature Commandos, Superman, Peacemaker S2, Supergirl Jun 26 2026, Lanterns Aug 16-Oct 4 2026, Clayface Oct 23 2026; Man of Tomorrow Jul 9 2027; undated projects)",
+    "https://www.thewrap.com/creative-content/movies/clayface-sets-new-release-date-after-warner-bros-pushes-to-october/ (Clayface moved from Sep 11 to Oct 23 2026)"
+   ],
+   "items": [
+    {
+     "imdbId": "tt34890576",
+     "title": "Clayface",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt26545355",
+     "title": "Creature Commandos",
+     "type": "series",
+     "year": "2024"
+    },
+    {
+     "imdbId": "tt5950044",
+     "title": "Superman",
+     "type": "movie",
+     "year": "2025"
+    },
+    {
+     "imdbId": "tt13146488",
+     "title": "Peacemaker",
+     "type": "series",
+     "year": "2022"
+    },
+    {
+     "imdbId": "tt8814476",
+     "title": "Supergirl",
+     "type": "movie",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt26545992",
+     "title": "Lanterns",
+     "type": "series",
+     "year": "2026"
+    },
+    {
+     "imdbId": "tt37833661",
+     "title": "Man of Tomorrow",
+     "type": "movie",
+     "year": "2027"
+    }
+   ]
+  }
+ ]
+}

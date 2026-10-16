@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvel &amp; DC catalogs for Stremio</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #0f0d1a; color: #ece9f5; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  p.lead { color: #aaa3c2; margin: 0 0 28px; }
+  .card { display: flex; gap: 18px; align-items: flex-start; background: #1b1830; border-radius: 14px;
+          padding: 20px; margin-bottom: 18px; }
+  .card img { width: 84px; height: 84px; border-radius: 12px; object-fit: cover; flex: none; background: #000; }
+  .card h2 { margin: 0 0 4px; font-size: 20px; }
+  .card .cats { color: #aaa3c2; font-size: 14px; margin: 0 0 12px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  a.btn, button.btn { font: inherit; font-size: 14px; border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer;
+          text-decoration: none; color: #fff; background: #7b5bf5; }
+  a.btn.alt, button.btn.alt { background: #2d2948; }
+  code { display: block; margin-top: 10px; font-size: 12px; color: #c9c2e6; word-break: break-all; }
+  .note { color: #aaa3c2; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Marvel &amp; DC catalogs for Stremio</h1>
+  <p class="lead">Self-hosted catalog addons. They list titles in watch order; Stremio fills in details, and your
+    other addons provide the streams.</p>
+  <div id="addons"></div>
+  <p class="note" id="hint"></p>
+</main>
+<script>
+  // Works wherever this folder is hosted: URLs are computed from this page's address.
+  var path = location.pathname;
+  if (!/\/$/.test(path) && !/\.[^\/]*$/.test(path)) path += '/';  // ".../stremio-heroes" without the slash
+  var base = location.origin + path.replace(/\/[^\/]*$/, '');
+  var hint = document.getElementById('hint');
+  if (location.protocol === 'file:') {
+    hint.textContent = 'This page is opened from disk. Run "python3 serve.py" or publish the docs folder first.';
+  } else if (location.protocol === 'http:') {
+    hint.textContent = 'Local test server: the "Install" button needs HTTPS, so copy the link and paste it into Stremio > Addons > + Add addon.';
+  }
+  ['marvel', 'dc'].forEach(function (brand) {
+    var url = base + '/' + brand + '/manifest.json';
+    var slot = document.getElementById('addons').appendChild(document.createElement('div'));
+    fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (m) {
+      var card = document.createElement('div');
+      card.className = 'card';
+      var stremio = 'stremio://' + url.replace(/^https?:\/\//, '');
+      var web = 'https://web.stremio.com/#/addons?addon=' + encodeURIComponent(url);
+      card.innerHTML =
+        '<img alt="">' +
+        '<div><h2></h2><p class="cats"></p><div class="btns">' +
+        (location.protocol === 'https:' ? '<a class="btn" href="' + stremio + '">Install in Stremio</a>' +
+          '<a class="btn alt" target="_blank" rel="noopener" href="' + web + '">Install via Stremio Web</a>' : '') +
+        '<button class="btn alt" type="button">Copy link</button></div><code></code></div>';
+      card.querySelector('img').src = m.logo;
+      card.querySelector('h2').textContent = m.name;
+      card.querySelector('.cats').textContent = m.catalogs.map(function (c) { return c.name; }).join(' · ');
+      card.querySelector('code').textContent = url;
+      card.querySelector('button').onclick = function (e) {
+        navigator.clipboard.writeText(url).then(function () { e.target.textContent = 'Copied'; });
+      };
+      slot.replaceWith(card);
+    }).catch(function (e) {
+      slot.className = 'note';
+      slot.textContent = 'Could not load ' + url + ' (' + e.message + '). Check the upload kept the ' +
+        brand + ' folder, or wait a minute if the site was just published.';
+    });
+  });
+</script>
+</body>
+</html>
