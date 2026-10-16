@@ -45,6 +45,15 @@ The channel lists come from [i.mjh.nz](https://i.mjh.nz) (Matt Huisman),
 [apsattv.com](https://www.apsattv.com) (Samsung); every stream is the broadcaster's or service's own.
 The broadcasters only allow these streams **from Australia**, so a VPN must exit in Australia.
 
+Each channel offers two streams; pick the one for where you're watching:
+- **Live**: the Stremio apps (TV, phone, desktop).
+- **Live (browser)**: Stremio Web (e.g. web.stremio.com in Brave) when the Stremio app or Stremio
+  Service is *not* running on that computer. Stremio Web only plays these channels itself; when
+  it hands them to a local streaming server, live channels don't play there, so use the app.
+
+Install AU Live TV directly in Stremio (below) rather than through AIOStreams: AIOStreams' stream
+formatting and filtering add nothing for live TV and can drop the browser stream's settings.
+
 ## Install in Stremio
 
 Published with GitHub Pages at **https://kellogs12.github.io/marvel-dc-stremio/**
@@ -85,8 +94,9 @@ suspended Render server, and Marvel's at the Deno server that keeps going down m
    manifest URL → **Install**. Do this once per addon:
    - `DC Universe`: `https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json`
    - `Marvel`: `https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json`
-   - `AU Live TV`: `https://kellogs12.github.io/marvel-dc-stremio/tv/manifest.json`. In its form
-     also turn on **Result Passthrough**, so AIOStreams' stream filters never hide a channel.
+   - AU Live TV works better installed directly in Stremio (see above). If you add it here anyway,
+     use `https://kellogs12.github.io/marvel-dc-stremio/tv/manifest.json` and turn on both
+     **Result Passthrough** and **Format Passthrough** in its form.
 4. **Addons → Installed → Catalogs**: the new catalogs are tagged *New*. Make sure they're
    switched on, and drag them into the order you like.
 5. **Save & Install**: the card must say **Save Configuration** with *your* UUID (if it says
