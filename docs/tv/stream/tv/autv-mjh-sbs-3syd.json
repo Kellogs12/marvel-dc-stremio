@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/sbs-3syd.m3u8","name":"Live","title":"SBS Food"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/sbs-3syd.m3u8","name":"Live","title":"SBS Food"},{"url":"https://i.mjh.nz/.r/sbs-3syd.m3u8","name":"Live (browser)","title":"SBS Food\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

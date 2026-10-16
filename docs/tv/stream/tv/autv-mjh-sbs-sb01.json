@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/sbs-sb01.m3u8","name":"Live","title":"The Cook Up"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/sbs-sb01.m3u8","name":"Live","title":"The Cook Up"},{"url":"https://i.mjh.nz/.r/sbs-sb01.m3u8","name":"Live (browser)","title":"The Cook Up\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

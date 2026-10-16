@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/sbs-sb04.m3u8","name":"Live","title":"Koori Knockout"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/sbs-sb04.m3u8","name":"Live","title":"Koori Knockout"},{"url":"https://i.mjh.nz/.r/sbs-sb04.m3u8","name":"Live (browser)","title":"Koori Knockout\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

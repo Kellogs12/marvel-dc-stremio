@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://all3media-international-insideoutside-1-au.samsung.wurl.tv/playlist.m3u8","name":"Live","title":"Inside outside"}]}
+{"streams":[{"url":"https://all3media-international-insideoutside-1-au.samsung.wurl.tv/playlist.m3u8","name":"Live","title":"Inside outside"},{"url":"https://all3media-international-insideoutside-1-au.samsung.wurl.tv/playlist.m3u8","name":"Live (browser)","title":"Inside outside\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

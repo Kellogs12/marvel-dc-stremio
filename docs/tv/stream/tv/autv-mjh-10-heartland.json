@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-heartland.m3u8","name":"Live","title":"Heartland"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-heartland.m3u8","name":"Live","title":"Heartland"},{"url":"https://i.mjh.nz/.r/10-heartland.m3u8","name":"Live (browser)","title":"Heartland\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -32,6 +32,11 @@ SOURCES = {
 }
 SAMSUNG_GUIDE = 'https://i.mjh.nz/SamsungTVPlus/all.xml.gz'
 ID_PREFIX = 'autv-'
+# Stremio Web only uses its HLS player (hls.js) when a stream reports exactly this type, and most
+# broadcasters send 'application/x-mpegURL' instead. Declaring it via proxyHeaders fixes the browser,
+# but Stremio's streaming server (desktop, TV and phone apps) then proxies the stream and breaks
+# the broadcasters' redirects. So each channel gets a plain stream plus a browser-only one.
+HLS_HINT = {'proxyHeaders': {'response': {'content-type': 'application/vnd.apple.mpegurl'}}}
 CATALOGS = [
     ('au-fta', 'Melbourne Free-to-Air'),
     ('au-free', 'Free Channels'),
@@ -164,8 +169,8 @@ def channels():
     fta = []
     for c in _cached('mjh'):
         number = int(c['tvg-chno']) if c.get('tvg-chno', '').isdigit() else None
-        if (number and number >= 300) or re.search(r'\bradio\b', c['name'], re.I):
-            continue  # SBS radio stations
+        if (number and number >= 300) or re.search(r'\bradio\b|in 90 seconds', c['name'], re.I):
+            continue  # SBS radio stations, and ABC's 90-second MP4 loops (not live HLS)
         ch = {'id': make_id(c.get('channel-id') or c['name']), 'name': c['name'], 'url': c['url'],
               'logo': c.get('tvg-logo')}
         if number is not None:
@@ -216,8 +221,12 @@ def build(out_dir, base, write_json):
                     'description': ch['description'], 'genres': [cname]}
             metas.append(meta)
             write_json(os.path.join(out_dir, 'meta', 'tv', ch['id'] + '.json'), {'meta': meta})
-            write_json(os.path.join(out_dir, 'stream', 'tv', ch['id'] + '.json'),
-                       {'streams': [{'url': ch['url'], 'name': 'Live', 'title': ch['name']}]})
+            write_json(os.path.join(out_dir, 'stream', 'tv', ch['id'] + '.json'), {'streams': [
+                {'url': ch['url'], 'name': 'Live', 'title': ch['name']},
+                {'url': ch['url'], 'name': 'Live (browser)',
+                 'title': '%s\nFor Stremio Web without the streaming server' % ch['name'],
+                 'behaviorHints': HLS_HINT},
+            ]})
         write_json(os.path.join(out_dir, 'catalog', 'tv', cid + '.json'),
                    {'metas': [{k: m[k] for k in ('id', 'type', 'name', 'poster', 'posterShape', 'description')}
                               for m in metas]})

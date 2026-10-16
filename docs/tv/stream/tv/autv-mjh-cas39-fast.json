@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/cas39-fast.m3u8","name":"Live","title":"24 Hours in A&E"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/cas39-fast.m3u8","name":"Live","title":"24 Hours in A&E"},{"url":"https://i.mjh.nz/.r/cas39-fast.m3u8","name":"Live (browser)","title":"24 Hours in A&E\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

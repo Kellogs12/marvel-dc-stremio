@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-nosey-intl-1-samsungau/playlist.m3u8","name":"Live","title":"Nosey"}]}
+{"streams":[{"url":"https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-nosey-intl-1-samsungau/playlist.m3u8","name":"Live","title":"Nosey"},{"url":"https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-nosey-intl-1-samsungau/playlist.m3u8","name":"Live (browser)","title":"Nosey\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

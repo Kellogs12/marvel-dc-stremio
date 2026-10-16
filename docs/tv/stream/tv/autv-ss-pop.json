@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://amg01753-amg01753c6-samsung-au-6678.playouts.now.amagi.tv/playlist.m3u8","name":"Live","title":"Pop"}]}
+{"streams":[{"url":"https://amg01753-amg01753c6-samsung-au-6678.playouts.now.amagi.tv/playlist.m3u8","name":"Live","title":"Pop"},{"url":"https://amg01753-amg01753c6-samsung-au-6678.playouts.now.amagi.tv/playlist.m3u8","name":"Live (browser)","title":"Pop\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

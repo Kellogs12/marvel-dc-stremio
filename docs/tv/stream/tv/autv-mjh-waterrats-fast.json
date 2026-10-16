@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/waterrats-fast.m3u8","name":"Live","title":"Water Rats"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/waterrats-fast.m3u8","name":"Live","title":"Water Rats"},{"url":"https://i.mjh.nz/.r/waterrats-fast.m3u8","name":"Live (browser)","title":"Water Rats\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

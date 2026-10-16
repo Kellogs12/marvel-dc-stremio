@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/wnbl-202627-fast.m3u8","name":"Live","title":"WNBL 2026/27"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/wnbl-202627-fast.m3u8","name":"Live","title":"WNBL 2026/27"},{"url":"https://i.mjh.nz/.r/wnbl-202627-fast.m3u8","name":"Live (browser)","title":"WNBL 2026/27\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

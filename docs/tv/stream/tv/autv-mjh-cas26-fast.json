@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/cas26-fast.m3u8","name":"Live","title":"Home and Away Classics"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/cas26-fast.m3u8","name":"Live","title":"Home and Away Classics"},{"url":"https://i.mjh.nz/.r/cas26-fast.m3u8","name":"Live (browser)","title":"Home and Away Classics\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

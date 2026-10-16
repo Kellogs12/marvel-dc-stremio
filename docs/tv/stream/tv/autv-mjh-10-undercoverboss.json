@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-undercoverboss.m3u8","name":"Live","title":"Undercover Boss"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-undercoverboss.m3u8","name":"Live","title":"Undercover Boss"},{"url":"https://i.mjh.nz/.r/10-undercoverboss.m3u8","name":"Live (browser)","title":"Undercover Boss\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

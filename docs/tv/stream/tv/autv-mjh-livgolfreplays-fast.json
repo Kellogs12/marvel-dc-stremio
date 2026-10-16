@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/livgolfreplays-fast.m3u8","name":"Live","title":"LIV Golf Replays"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/livgolfreplays-fast.m3u8","name":"Live","title":"LIV Golf Replays"},{"url":"https://i.mjh.nz/.r/livgolfreplays-fast.m3u8","name":"Live (browser)","title":"LIV Golf Replays\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

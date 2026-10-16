@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://lightningnow90-samsungau.amagi.tv/playlist.m3u8","name":"Live","title":"Now Rock"}]}
+{"streams":[{"url":"https://lightningnow90-samsungau.amagi.tv/playlist.m3u8","name":"Live","title":"Now Rock"},{"url":"https://lightningnow90-samsungau.amagi.tv/playlist.m3u8","name":"Live (browser)","title":"Now Rock\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-forty-eight-hours.m3u8","name":"Live","title":"48 Hours"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-forty-eight-hours.m3u8","name":"Live","title":"48 Hours"},{"url":"https://i.mjh.nz/.r/10-forty-eight-hours.m3u8","name":"Live (browser)","title":"48 Hours\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/seinfeld-fast.m3u8","name":"Live","title":"Seinfeld"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/seinfeld-fast.m3u8","name":"Live","title":"Seinfeld"},{"url":"https://i.mjh.nz/.r/seinfeld-fast.m3u8","name":"Live (browser)","title":"Seinfeld\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/ausbiz-fast.m3u8","name":"Live","title":"ausbiz"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/ausbiz-fast.m3u8","name":"Live","title":"ausbiz"},{"url":"https://i.mjh.nz/.r/ausbiz-fast.m3u8","name":"Live (browser)","title":"ausbiz\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

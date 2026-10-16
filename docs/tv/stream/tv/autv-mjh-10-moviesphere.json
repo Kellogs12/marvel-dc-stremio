@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-moviesphere.m3u8","name":"Live","title":"Moviesphere"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-moviesphere.m3u8","name":"Live","title":"Moviesphere"},{"url":"https://i.mjh.nz/.r/10-moviesphere.m3u8","name":"Live (browser)","title":"Moviesphere\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

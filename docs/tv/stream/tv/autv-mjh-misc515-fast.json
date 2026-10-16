@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/misc515-fast.m3u8","name":"Live","title":"Greyhound Racing MISC515"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/misc515-fast.m3u8","name":"Live","title":"Greyhound Racing MISC515"},{"url":"https://i.mjh.nz/.r/misc515-fast.m3u8","name":"Live (browser)","title":"Greyhound Racing MISC515\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

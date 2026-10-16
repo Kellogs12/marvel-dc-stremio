@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-introuble-samsungtv-au/playlist.m3u8","name":"Live","title":"INTROUBLE"}]}
+{"streams":[{"url":"https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-introuble-samsungtv-au/playlist.m3u8","name":"Live","title":"INTROUBLE"},{"url":"https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-introuble-samsungtv-au/playlist.m3u8","name":"Live (browser)","title":"INTROUBLE\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

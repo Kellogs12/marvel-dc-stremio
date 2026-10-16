@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://amg00106-amg00106c1-samsung-au-4150.playouts.now.amagi.tv/playlist.m3u8","name":"Live","title":"France 24"}]}
+{"streams":[{"url":"https://amg00106-amg00106c1-samsung-au-4150.playouts.now.amagi.tv/playlist.m3u8","name":"Live","title":"France 24"},{"url":"https://amg00106-amg00106c1-samsung-au-4150.playouts.now.amagi.tv/playlist.m3u8","name":"Live (browser)","title":"France 24\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

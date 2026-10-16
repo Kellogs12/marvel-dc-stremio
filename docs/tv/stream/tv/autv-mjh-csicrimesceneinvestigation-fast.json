@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/csicrimesceneinvestigation-fast.m3u8","name":"Live","title":"CSI Crime Scene Investigation"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/csicrimesceneinvestigation-fast.m3u8","name":"Live","title":"CSI Crime Scene Investigation"},{"url":"https://i.mjh.nz/.r/csicrimesceneinvestigation-fast.m3u8","name":"Live (browser)","title":"CSI Crime Scene Investigation\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

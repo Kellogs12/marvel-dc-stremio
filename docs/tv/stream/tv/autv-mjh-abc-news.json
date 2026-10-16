@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://c.mjh.nz/abc-news.m3u8","name":"Live","title":"ABC NEWS"}]}
+{"streams":[{"url":"https://c.mjh.nz/abc-news.m3u8","name":"Live","title":"ABC NEWS"},{"url":"https://c.mjh.nz/abc-news.m3u8","name":"Live (browser)","title":"ABC NEWS\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10shake-vic.m3u8","name":"Live","title":"Nickelodeon"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10shake-vic.m3u8","name":"Live","title":"Nickelodeon"},{"url":"https://i.mjh.nz/.r/10shake-vic.m3u8","name":"Live (browser)","title":"Nickelodeon\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

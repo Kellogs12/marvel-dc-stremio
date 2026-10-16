@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/botchedvault-fast.m3u8","name":"Live","title":"Botched VAULT"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/botchedvault-fast.m3u8","name":"Live","title":"Botched VAULT"},{"url":"https://i.mjh.nz/.r/botchedvault-fast.m3u8","name":"Live (browser)","title":"Botched VAULT\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

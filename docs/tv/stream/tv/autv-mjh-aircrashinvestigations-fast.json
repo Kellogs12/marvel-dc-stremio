@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/aircrashinvestigations-fast.m3u8","name":"Live","title":"Air Crash Investigations"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/aircrashinvestigations-fast.m3u8","name":"Live","title":"Air Crash Investigations"},{"url":"https://i.mjh.nz/.r/aircrashinvestigations-fast.m3u8","name":"Live (browser)","title":"Air Crash Investigations\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

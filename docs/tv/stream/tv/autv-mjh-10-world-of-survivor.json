@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-world-of-survivor.m3u8","name":"Live","title":"World Of Survivor"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-world-of-survivor.m3u8","name":"Live","title":"World Of Survivor"},{"url":"https://i.mjh.nz/.r/10-world-of-survivor.m3u8","name":"Live (browser)","title":"World Of Survivor\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

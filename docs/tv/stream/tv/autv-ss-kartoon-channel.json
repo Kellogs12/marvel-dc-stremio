@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8","name":"Live","title":"Kartoon Channel"}]}
+{"streams":[{"url":"https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8","name":"Live","title":"Kartoon Channel"},{"url":"https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8","name":"Live (browser)","title":"Kartoon Channel\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

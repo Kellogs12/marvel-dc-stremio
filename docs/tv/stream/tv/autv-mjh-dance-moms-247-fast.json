@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/dance-moms-247-fast.m3u8","name":"Live","title":"Dance Moms 24/7"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/dance-moms-247-fast.m3u8","name":"Live","title":"Dance Moms 24/7"},{"url":"https://i.mjh.nz/.r/dance-moms-247-fast.m3u8","name":"Live (browser)","title":"Dance Moms 24/7\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

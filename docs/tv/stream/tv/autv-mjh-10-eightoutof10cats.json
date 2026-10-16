@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-eightoutof10cats.m3u8","name":"Live","title":"8 Out Of 10 Cats"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-eightoutof10cats.m3u8","name":"Live","title":"8 Out Of 10 Cats"},{"url":"https://i.mjh.nz/.r/10-eightoutof10cats.m3u8","name":"Live (browser)","title":"8 Out Of 10 Cats\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

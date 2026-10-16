@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-jamieoliver.m3u8","name":"Live","title":"Jamie Oliver"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-jamieoliver.m3u8","name":"Live","title":"Jamie Oliver"},{"url":"https://i.mjh.nz/.r/10-jamieoliver.m3u8","name":"Live (browser)","title":"Jamie Oliver\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-medical-emergency.m3u8","name":"Live","title":"Medical Emergency"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-medical-emergency.m3u8","name":"Live","title":"Medical Emergency"},{"url":"https://i.mjh.nz/.r/10-medical-emergency.m3u8","name":"Live (browser)","title":"Medical Emergency\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

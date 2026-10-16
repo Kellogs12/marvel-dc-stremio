@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-cops.m3u8","name":"Live","title":"COPS"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-cops.m3u8","name":"Live","title":"COPS"},{"url":"https://i.mjh.nz/.r/10-cops.m3u8","name":"Live (browser)","title":"COPS\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

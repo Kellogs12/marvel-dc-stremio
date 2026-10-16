@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/bloomberg-tv.m3u8","name":"Live","title":"Bloomberg TV"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/bloomberg-tv.m3u8","name":"Live","title":"Bloomberg TV"},{"url":"https://i.mjh.nz/.r/bloomberg-tv.m3u8","name":"Live (browser)","title":"Bloomberg TV\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://c.mjh.nz/good-dot.m3u8","name":"Live","title":"GOOD."}]}
+{"streams":[{"url":"https://c.mjh.nz/good-dot.m3u8","name":"Live","title":"GOOD."},{"url":"https://c.mjh.nz/good-dot.m3u8","name":"Live (browser)","title":"GOOD.\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

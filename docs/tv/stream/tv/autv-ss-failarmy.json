@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://failarmy-international-au.samsung.wurl.tv/playlist.m3u8","name":"Live","title":"Failarmy"}]}
+{"streams":[{"url":"https://failarmy-international-au.samsung.wurl.tv/playlist.m3u8","name":"Live","title":"Failarmy"},{"url":"https://failarmy-international-au.samsung.wurl.tv/playlist.m3u8","name":"Live (browser)","title":"Failarmy\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

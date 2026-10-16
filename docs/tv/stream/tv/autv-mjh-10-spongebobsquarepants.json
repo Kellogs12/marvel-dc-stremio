@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://i.mjh.nz/.r/10-spongebobsquarepants.m3u8","name":"Live","title":"SpongeBob SquarePants"}]}
+{"streams":[{"url":"https://i.mjh.nz/.r/10-spongebobsquarepants.m3u8","name":"Live","title":"SpongeBob SquarePants"},{"url":"https://i.mjh.nz/.r/10-spongebobsquarepants.m3u8","name":"Live (browser)","title":"SpongeBob SquarePants\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}

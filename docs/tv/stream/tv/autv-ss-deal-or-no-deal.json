@@ -1,1 +1,1 @@
-{"streams":[{"url":"https://amg00627-amg00627c21-samsung-au-3873.playouts.now.amagi.tv/playlist.m3u8","name":"Live","title":"Deal or no Deal"}]}
+{"streams":[{"url":"https://amg00627-amg00627c21-samsung-au-3873.playouts.now.amagi.tv/playlist.m3u8","name":"Live","title":"Deal or no Deal"},{"url":"https://amg00627-amg00627c21-samsung-au-3873.playouts.now.amagi.tv/playlist.m3u8","name":"Live (browser)","title":"Deal or no Deal\nFor Stremio Web without the streaming server","behaviorHints":{"proxyHeaders":{"response":{"content-type":"application/vnd.apple.mpegurl"}}}}]}
