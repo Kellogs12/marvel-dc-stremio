@@ -22,6 +22,12 @@
   a.btn.alt, button.btn.alt { background: #2d2948; }
   code { display: block; margin-top: 10px; font-size: 12px; color: #c9c2e6; word-break: break-all; }
   .note { color: #aaa3c2; font-size: 14px; }
+  .howto { background: #16142a; border-radius: 14px; padding: 4px 20px 12px; margin-top: 18px; font-size: 15px; }
+  .howto h2 { font-size: 18px; margin: 16px 0 6px; }
+  .howto ol { padding-left: 20px; margin: 6px 0; }
+  .howto li { margin: 6px 0; }
+  .howto code { display: inline; margin: 0; font-size: 13px; }
+  .howto a { color: #b9a6ff; }
 </style>
 </head>
 <body>
@@ -31,6 +37,34 @@
     other addons provide the streams.</p>
   <div id="addons"></div>
   <p class="note" id="hint"></p>
+
+  <section class="howto">
+    <h2>On a Mac?</h2>
+    <p class="note">"Install in Stremio" hands the link to the Stremio desktop app, which has been seen to open
+      without installing anything. If nothing appears, use "Install via Stremio Web", or copy the link and in Stremio go to
+      <b>Addons → + Add addon</b>, paste, <b>Add</b>, <b>Install</b>.</p>
+
+    <h2>Using AIOStreams?</h2>
+    <p class="note">Add these as <b>Custom</b> addons in AIOStreams. Its own "Marvel Universe" and
+      "DC Universe" addons can't be pointed elsewhere: DC's server is suspended and Marvel's keeps going down.</p>
+    <ol>
+      <li>On your AIOStreams configure page choose <b>I already have a configuration</b> and sign in with your
+        UUID and password. The other starting options create a new setup.</li>
+      <li><b>Addons → Installed</b>: switch off <b>Marvel Universe</b> and <b>DC Universe</b>.</li>
+      <li><b>Addons → Marketplace</b>: search <b>Custom</b> → <b>Configure</b> → paste a manifest URL →
+        <b>Install</b>. Once for <code class="u" data-brand="dc">https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json</code>
+        and once for <code class="u" data-brand="marvel">https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json</code>.</li>
+      <li><b>Catalogs</b>: check the new ones (tagged <i>New</i>) are switched on.</li>
+      <li><b>Save &amp; Install</b>: the card must say <b>Save Configuration</b> with your UUID. Click
+        <b>Save</b>. If saving fails because an addon "has been removed", delete that addon (switching it off
+        isn't enough). If an addon's manifest can't be fetched, switch it off. Then save again.</li>
+      <li>Reinstall AIOStreams: under <b>Direct Manifest URL</b> click the copy icon. Then in Stremio Web open
+        <b>Addons</b>, uninstall the older AIOStreams, click <b>+ Add addon</b>, paste, <b>Add</b>, <b>Install</b>.</li>
+    </ol>
+    <p class="note">More detail and troubleshooting:
+      <a href="https://github.com/Kellogs12/marvel-dc-stremio#using-with-aiostreams" target="_blank"
+         rel="noopener">README on GitHub</a>.</p>
+  </section>
 </main>
 <script>
   // Works wherever this folder is hosted: URLs are computed from this page's address.
@@ -38,6 +72,9 @@
   if (!/\/$/.test(path) && !/\.[^\/]*$/.test(path)) path += '/';  // ".../stremio-heroes" without the slash
   var base = location.origin + path.replace(/\/[^\/]*$/, '');
   var hint = document.getElementById('hint');
+  document.querySelectorAll('code.u').forEach(function (el) {
+    el.textContent = base + '/' + el.dataset.brand + '/manifest.json';
+  });
   if (location.protocol === 'file:') {
     hint.textContent = 'This page is opened from disk. Run "python3 serve.py" or publish the docs folder first.';
   } else if (location.protocol === 'http:') {

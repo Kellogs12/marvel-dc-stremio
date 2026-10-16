@@ -10,6 +10,7 @@ static files so they can be hosted for free and never "run out" of server time.
 | Marvel (joaogonp) | `https://addon-marvel.onrender.com/manifest.json` (what Stremio's in-app Community list still installs) | **Suspended** by its owner on Render |
 | Marvel, new home | `https://addon-marvel.gonp.deno.net/manifest.json` | Up today, but the author says it keeps exceeding Deno's free tier and going down mid-month |
 | DC Universe (tapframe) | `https://addon-dc-cq85.onrender.com/manifest.json` | **Suspended** by its owner, no replacement |
+| AIOStreams' own Marketplace "Marvel Universe" / "DC Universe" | Hard-wired to `addon-marvel.gonp.deno.net` and `addon-dc-cq85.onrender.com` (you can't change the address on the configure page; only whoever runs the instance can, via `MARVEL_UNIVERSE_URL` / `DC_UNIVERSE_URL`) | DC shows **no rows at all**; Marvel works only while the Deno server is up |
 
 Both are *catalog-only* addons: they just list IMDb ids in a particular order. Stremio's built-in
 Cinemeta addon supplies the details and your other addons supply streams, so a static copy works
@@ -43,10 +44,41 @@ Published with GitHub Pages at **https://kellogs12.github.io/marvel-dc-stremio/*
    - `https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json`
 
    (Stremio 4: paste the URL into the Addons search box instead.)
+
+   On a Mac, **Install in Stremio** hands the link to the Stremio desktop app, which has been
+   seen to open without installing anything
+   ([stremio-bugs#2484](https://github.com/Stremio/stremio-bugs/issues/2484)). If nothing
+   appears, use **Install via Stremio Web** or the **+ Add addon** paste method instead.
 3. Addons sync with your Stremio account, so they appear on your TV and phone too.
 
 The catalogs show up as rows on the Board and under **Discover → Marvel / DC**. Titles open
 normally; your other installed addons provide the streams.
+
+## Using with AIOStreams
+
+If your addons go through an [AIOStreams](https://github.com/Viren070/AIOStreams) instance, add
+these as **Custom** addons there instead of installing them in Stremio directly. Don't use
+AIOStreams' own Marketplace **Marvel Universe** / **DC Universe** addons: DC's points at the
+suspended Render server, and Marvel's at the Deno server that keeps going down mid-month.
+
+1. Open your instance's configure page and sign in to your **existing** setup: choose **I
+   already have a configuration** (or **Sign In** in the sidebar) and enter your UUID and password. The other
+   two starting options ("Use a ready-made setup", "Set it up myself") create a brand-new setup
+   instead.
+2. **Addons → Installed**: switch off (or delete) **Marvel Universe** and **DC Universe**.
+3. **Addons → Marketplace**: search for **Custom** → **Configure**, set a name and paste the
+   manifest URL → **Install**. Do this twice:
+   - `DC Universe`: `https://kellogs12.github.io/marvel-dc-stremio/dc/manifest.json`
+   - `Marvel`: `https://kellogs12.github.io/marvel-dc-stremio/marvel/manifest.json`
+4. **Addons → Installed → Catalogs**: the new catalogs are tagged *New*. Make sure they're
+   switched on, and drag them into the order you like.
+5. **Save & Install**: the card must say **Save Configuration** with *your* UUID (if it says
+   **Create Configuration**, you're not signed in). Click **Save** and wait for "Configuration
+   updated successfully".
+6. Reinstall AIOStreams in Stremio so it picks up the new rows: under **Direct Manifest URL**
+   (or **Manifest URL (alias)**) click the copy icon next to the link. Then in Stremio Web go to
+   **Addons**, uninstall the older AIOStreams entry, click **+ Add addon**, paste, **Add**,
+   **Install**. (Avoid **Install to Stremio** on a Mac, for the reason above.)
 
 ## Files
 
@@ -142,6 +174,18 @@ deploy Pages?* choose **Get started** → **Drag and drop your files** → name 
 - DC "Release Order" is built from DC Movies + Series, and DC "Animations" merges the Batman and
   Superman animation rows, so add titles to those rows rather than directly.
 - `type` must be the one Cinemeta uses (`check.py` tells you if a title won't open).
+
+## Troubleshooting
+
+| What you see | Why | Fix |
+|---|---|---|
+| DC (or Marvel) rows missing, but the addon page works | AIOStreams is still using its own Marketplace Marvel Universe / DC Universe | Follow [Using with AIOStreams](#using-with-aiostreams) |
+| AIOStreams changes don't stick after saving | Saved while signed out (a new setup was created), or the save was rejected | Sign in with **I already have a configuration**; confirm the card says **Save Configuration** and you get "Configuration updated successfully" |
+| AIOStreams error "*X* has been removed: …" (or "*X* has been disabled: …") | An addon in your setup is no longer allowed on your instance (in v2.35.9 that includes TorBox, TorBox Search, USA TV and Debridio TV). AIOStreams rejects the whole setup, even if that addon is switched off | Delete that addon (switching it off isn't enough), then save |
+| AIOStreams error "Failed to fetch manifest for *X*" | That addon's server is down or gone, and AIOStreams won't save while it's on | Switch that addon off (you can turn it back on later), then save |
+| AIOStreams says "Reinstall required" (or "Reinstall recommended") | Rows were added, removed or reordered, so Stremio's saved copy is out of date | Reinstall AIOStreams in Stremio (step 6 above) |
+| No addons listed at all in Stremio | The addon (or AIOStreams) isn't installed in your Stremio account | Install it again with **+ Add addon**; addons sync to all your devices |
+| `127.0.0.1` addon works on the Mac only | Local test address | Use the published GitHub Pages address everywhere else |
 
 ## Credits
 
