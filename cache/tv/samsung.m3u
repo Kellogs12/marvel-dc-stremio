@@ -57,8 +57,6 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungau-rialtosamsungaustralia/playl
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungau/playlist.m3u8
 #EXTINF:-1,The Asylum (Australia)
 https://d1si3n1st4nkgb.cloudfront.net/10000/89009005/hls/master.m3u8?ads.xumo_channelId=89009005
-#EXTINF:-1,Zee Cinema HD (Australia)
-https://amg17931-zee-amg17931c5-samsung-au-8873.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1,The Archive (Australia)
 https://d1si3n1st4nkgb.cloudfront.net/10000/89009004/hls/master.m3u8?ads.xumo_channelId=89009004
 #EXTINF:-1,Mytime Movie Network (Australia)
@@ -193,8 +191,6 @@ https://amg00627-amg00627c37-samsung-au-4294.playouts.now.amagi.tv/playlist/amg0
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00627-banijaygroup-wipeoutxtraau-samsungau/playlist.m3u8
 #EXTINF:-1,Fear Factor (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00627-banijaygroup-fearfactor-samsungau/playlist.m3u8
-#EXTINF:-1,Zee One HD (Australia)
-https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8
 #EXTINF:-1,Vevo Christmas (Australia)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00056-vevotv-vevochristmasau-samsungau/playlist.m3u8
 #EXTINF:-1,Vevo Pop (Australia)
